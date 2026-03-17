@@ -1,0 +1,1920 @@
+infer logic of the addesses inclouded in this KMZ
+Bash Check file type and size
+IN
+file ANAGNI_NUMERAZIONE_CIVICA.kmz && ls -lh ANAGNI_NUMERAZIONE_CIVICA.kmz
+
+OUT
+ANAGNI_NUMERAZIONE_CIVICA.kmz: Zip archive data, at least v2.0 to extract, compression method=deflate
+-rw-rw-r-- 1 ginetto ginetto 576K feb 23 09:57 ANAGNI_NUMERAZIONE_CIVICA.kmz
+Bash Extract KMZ archive
+IN
+unzip -o ANAGNI_NUMERAZIONE_CIVICA.kmz -d /tmp/kmz_extracted/ 2>&1 && ls /tmp/kmz_extracted/
+
+OUT
+Archive:  ANAGNI_NUMERAZIONE_CIVICA.kmz
+  inflating: /tmp/kmz_extracted/doc.kml  
+  inflating: /tmp/kmz_extracted/files/0049__72_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__196_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__357_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__101_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__218_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__108_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__86_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__131_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__123_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__291_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__98_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__43_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__259_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__363_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__225_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__16_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__232_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__84_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__293_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__294_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__245_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__74_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__345_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__0_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__321_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__221_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__57_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__80_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__28_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__217_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__369_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__289_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__342_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__106_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__373_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__376_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__91_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__180_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__344_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__55_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__227_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__112_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__29_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__310_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__237_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__222_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__201_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__4_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__257_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__366_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__367_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__335_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__194_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__203_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__365_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__42_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__251_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__351_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__288_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__233_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__191_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__17_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__339_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__353_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__68_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__197_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__50_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__21_10_0.png  inflating: /tmp/kmz_extracted/files/0049__296_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__202_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__113_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__148_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__304_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__327_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__193_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__320_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__356_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__15_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__346_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__183_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__248_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__204_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__364_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__207_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__273_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__151_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__168_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__200_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__301_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__341_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__229_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__190_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__140_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__214_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__334_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__118_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__297_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__370_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__287_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__64_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__143_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__332_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__280_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__300_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__354_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__22_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__110_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__103_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__290_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__124_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__115_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__111_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__10_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__95_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__195_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__121_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__274_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__66_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__70_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__252_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__209_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__340_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__100_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__238_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__358_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__372_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__260_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__157_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__249_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__216_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__240_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__378_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__165_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__175_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__242_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__315_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__164_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__283_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__239_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__368_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__192_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__236_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__120_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__155_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__271_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__328_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__136_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__65_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__243_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__349_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__284_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__210_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__230_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__97_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__253_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__282_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__116_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__337_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__298_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__309_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__36_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__60_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__278_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__154_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__128_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__44_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__163_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__75_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__256_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__178_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__93_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__145_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__132_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__109_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__228_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__244_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__114_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__122_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__276_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__71_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__247_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__213_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__333_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__162_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__8_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__361_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__211_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__11_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__1_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__129_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__181_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__170_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__224_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__54_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__117_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__83_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__362_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__323_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__49_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__314_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__208_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__325_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__40_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__130_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__2_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__324_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__316_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__250_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__5_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__255_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__127_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__159_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__347_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__53_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__186_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__51_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__267_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__79_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__177_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__270_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__6_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__96_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__31_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__336_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__188_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__374_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__269_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__281_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__20_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__107_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__285_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__37_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__303_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__18_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__3_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__34_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__312_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__69_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__73_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__147_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__246_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__24_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__104_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__99_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__144_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__172_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__326_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__182_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__82_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__12_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__27_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__7_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__23_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__133_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__119_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__166_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__263_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__46_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__9_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__375_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__348_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__308_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__67_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__329_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__59_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__87_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__220_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__305_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__219_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__126_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__330_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__58_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__286_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__19_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__277_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__38_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__235_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__161_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__206_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__176_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__150_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__142_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__292_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__167_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__215_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__137_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__48_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__102_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__61_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__14_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__62_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__81_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__146_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__231_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__39_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__268_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__205_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__371_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__77_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__331_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__56_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__35_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__265_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__266_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__26_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__185_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__189_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__377_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__261_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__156_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__317_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__160_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__30_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__307_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__139_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__302_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__313_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__241_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__153_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__76_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__135_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__138_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__258_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__264_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__187_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__311_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__212_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__52_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__88_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__25_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__105_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__262_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__359_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__94_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__338_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__350_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__85_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__169_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__152_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__319_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__322_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__318_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__125_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__47_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__33_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__92_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__171_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__179_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__352_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__173_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__279_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__32_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__360_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__89_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__41_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__295_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__355_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__141_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__134_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__199_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__45_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__184_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__299_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__13_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__272_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__234_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__343_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__275_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__90_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__223_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__254_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__174_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__149_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__226_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__63_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__78_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__158_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__306_10_0.png  
+  inflating: /tmp/kmz_extracted/files/0049__198_10_0.png  
+doc.kml
+files
+Bash Check KML size and first lines
+IN
+wc -l /tmp/kmz_extracted/doc.kml && head -100 /tmp/kmz_extracted/doc.kml
+
+OUT
+213515 /tmp/kmz_extracted/doc.kml
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ANAGNI_NUMERAZIONE_CIVICA</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="ANAGNI_NUMERAZIONE_CIVICA" id="FormTypeId00">
+		<SimpleField type="int" name="COD_TOPONIMO"></SimpleField>
+		<SimpleField type="string" name="CIVICO"></SimpleField>
+		<SimpleField type="string" name="CIVICO_ES"></SimpleField>
+		<SimpleField type="string" name="ESP_LETT_ES"></SimpleField>
+		<SimpleField type="string" name="TOPONIMO"></SimpleField>
+		<SimpleField type="string" name="DATA_KML"></SimpleField>
+		<SimpleField type="int" name="SEZIONE_DI_CENSIMENTO"></SimpleField>
+	</Schema>
+	<StyleMap id="m_00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin020">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin010</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin40000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin200">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin110</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin201">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin3100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin71</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin31000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin210</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl51</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin401">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl4000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin4010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin410</styleUrl>
+		</Pair>
+		<Pair>
+Bash Find first Placemark elements
+IN
+# Find first Placemark to understand the structure
+grep -n "<Placemark" /tmp/kmz_extracted/doc.kml | head -5
+
+OUT
+10343:			<Placemark id="10852">
+10361:			<Placemark id="10853">
+10379:			<Placemark id="10854">
+10397:			<Placemark id="10855">
+10415:			<Placemark id="10856">
+Read doc.kml (lines 10341-10460)
+Bash Count placemarks, folders and list street names
+IN
+# Count total Placemarks
+grep -c "<Placemark" /tmp/kmz_extracted/doc.kml
+
+# Count Folders (streets)
+grep -c "<Folder>" /tmp/kmz_extracted/doc.kml
+
+# Extract all folder names (street names)
+grep -A1 "<Folder>" /tmp/kmz_extracted/doc.kml | grep "<name>" | head -30
+
+OUT
+11204
+380
+		<name>Legend</name>
+			<name>1 - VIA RAFFAELE AMBROSETTI</name>
+			<name>10 - VIA ONORATO CAPO</name>
+			<name>100 - VIA ENRICO VIGNA</name>
+			<name>101 - VIA VITTORIO EMANUELE SECONDO</name>
+			<name>102 - PORTICO  ZANCATI</name>
+			<name>103 - VICOLO ZANCATI</name>
+			<name>104 - LARGO RAFFAELE ZEGRETTI</name>
+			<name>105 - PIAZZA SANT&apos;ANDREA</name>
+			<name>106 - PIAZZA SANT&apos;ANGELO</name>
+			<name>107 - PIAZZA CESARE BATTISTI</name>
+			<name>108 - PIAZZA RUGGERO BONGHI</name>
+			<name>109 - PIAZZA PAPA BONIFACIO OTTAVO</name>
+			<name>11 - VIA CASE NUOVE</name>
+			<name>112 - PIAZZA CAMILLO BENSO DI CAVOUR</name>
+			<name>113 - PIAZZA SANTA CHIARA</name>
+			<name>114 - PIAZZA DANTE ALIGHIERI</name>
+			<name>115 - PIAZZA MASSIMO D&apos;AZEGLIO</name>
+			<name>116 - PIAZZA PAPA INNOCENZO TERZO</name>
+			<name>117 - PIAZZA DEL POPOLO</name>
+			<name>118 - PIAZZA GUGLIELMO MARCONI</name>
+			<name>12 - VICOLO CELLACCHIO</name>
+			<name>120 - PIAZZA SAN PANCRAZIO</name>
+			<name>121 - PIAZZA PERFETTI</name>
+			<name>122 - VIA COLLE SANT&apos;ANGELO</name>
+			<name>123 - VICOLO SILVESTRI</name>
+			<name>124 - VICOLO SANT&apos;ANDREA</name>
+			<name>125 - LARGO DEL TUFO</name>
+			<name>126 - LARGO SAN BENEDETTO</name>
+			<name>127 - VICOLO MARINO</name>
+Bash Extract and count all street names
+IN
+# Extract all folder names
+grep -A1 "<Folder>" /tmp/kmz_extracted/doc.kml | grep "<name>" | sed 's/.*<name>//;s/<\/name>//' | grep -v "Legend" | sort > /tmp/all_streets.txt
+wc -l /tmp/all_streets.txt
+cat /tmp/all_streets.txt
+
+OUT
+379 /tmp/all_streets.txt
+100 - VIA ENRICO VIGNA
+101 - VIA VITTORIO EMANUELE SECONDO
+102 - PORTICO  ZANCATI
+103 - VICOLO ZANCATI
+104 - LARGO RAFFAELE ZEGRETTI
+105 - PIAZZA SANT&apos;ANDREA
+106 - PIAZZA SANT&apos;ANGELO
+107 - PIAZZA CESARE BATTISTI
+108 - PIAZZA RUGGERO BONGHI
+109 - PIAZZA PAPA BONIFACIO OTTAVO
+10 - VIA ONORATO CAPO
+112 - PIAZZA CAMILLO BENSO DI CAVOUR
+113 - PIAZZA SANTA CHIARA
+114 - PIAZZA DANTE ALIGHIERI
+115 - PIAZZA MASSIMO D&apos;AZEGLIO
+116 - PIAZZA PAPA INNOCENZO TERZO
+117 - PIAZZA DEL POPOLO
+118 - PIAZZA GUGLIELMO MARCONI
+11 - VIA CASE NUOVE
+120 - PIAZZA SAN PANCRAZIO
+121 - PIAZZA PERFETTI
+122 - VIA COLLE SANT&apos;ANGELO
+123 - VICOLO SILVESTRI
+124 - VICOLO SANT&apos;ANDREA
+125 - LARGO DEL TUFO
+126 - LARGO SAN BENEDETTO
+127 - VICOLO MARINO
+12 - VICOLO CELLACCHIO
+13 - VIA GIUSEPPE CERASARO
+16 - VICOLO COCCHETTO
+17 - VIA DECIO COLACICCHI
+18 - VIA ARTURO COLANTONI
+19 - VICOLO DEL CONIGLIO
+1 - VIA RAFFAELE AMBROSETTI
+20 - VICOLO DEL CUNICOLO
+2120 - STRADA VICINALE FONTANA VETERE
+2121 - CIRCONVALLAZIONE SOTTO LE MURA
+2124 - STRADA VICINALE DEGLI ARCI
+2125 - STRADA COMUNALE SAN FILIPPO
+2126 - STRADA COMUNALE STANZE DI FOGGIA
+2127 - TRAVERSA PRIMA DI VIA SANTA CECILIA
+2128 - STRADA VICINALE SANTA CECILIA
+2129 - STRADA PROVINCIALE 25 CERERE NAVICELLA
+2131 - VIA MURAGLIONE PUZZICO
+2132 - VIA ANAGNI ACUTO PUZZICO
+2133 - VIA FONTANA PUZZICO
+2135 - TRAVERSA PRIVATA PRIMA DI VIA CANGIANO SAN BARTOLOMEO
+2136 - TRAVERSA PRIVATA SECONDA DI VIA CANGIANO SAN BARTOLOMEO
+2137 - TRAVERSA PRIVATA TERZA DI VIA CANGIANO SAN BARTOLOMEO
+2138 - TRAVERSA PRIVATA QUARTA DI VIA CANGIANO SAN BARTOLOMEO
+2139 - TRAVERSA PRIVATA QUINTA  DI VIA CANGIANO SAN BARTOLOMEO
+2140 - TRAVERSA PRIVATA SESTA DI VIA CANGIANO SAN BARTOLOMEO
+2141 - TRAVERSA PRIVATA SETTIMA DI VIA CANGIANO SAN BARTOLOMEO
+2142 - VIA VADO LARGO LA SALA
+2143 - LARGO SALVATORE GATTI
+2146 - STRADA COMUNALE ANAGNI FERENTINO
+2149 - STRADA PROVINCIALE 227 PEDEMONTANA MONTI LEPINI
+2152 - PORTICO PISCINA
+2153 - PIAZZA BEATO GIOVANNI PAOLO SECONDO
+2154 - PIAZZA GREGORIO NONO
+2155 - VIA COLA DI RIENZO
+2156 - VICOLO PIETRO ZAPPASODI
+2157 - VICOLO AUGUSTINO MARTINELLI
+2158 - PIAZZA ALESSANDRO QUARTO
+2159 - VIA GIUSEPPE MAZZINI
+2160 - VICOLO SALVATORE SIBILIA
+2161 - VICOLO DIOMEDE GIANNUZZI
+2162 - VICOLO GIUSEPPE DE MEIS
+2163 - STRADA VICINALE BELVEDERE CASTELLONE
+2165 - TRAVERSA PRIVATA PRIMA DI VIA ROTABILE SAN FRANCESCO
+2166 - TRAVERSA PRIVATA SECONDA DI VIA ROTABILE SAN FRANCESCO
+2167 - TRAVERSA PRIVATA TERZA DI VIA ROTABILE SAN FRANCESCO
+2168 - TRAVERSA PRIVATA QUARTA DI VIA ROTABILE SAN FRANCESCO
+21 - VIA DOMENICO DANDINI
+22 - VIA DANTE ALIGHIERI
+23 - VICOLO DE CESARIS
+25 - VICOLO DELLA FALCE
+26 - VICOLO DEL FALCO
+27 - VIA LEONIDA FIORAMONTI
+28 - VIA DELLE FONTANE
+2 - VIA CAMILLO ANZELLOTTI
+302 - VIA DELL&apos; ACQUA SANTA
+303 - VIA AIA DELLA MACCHIA
+304 - VIA ALTO PRATO
+305 - STRADA COMUNALE ANAGNI ACUTO
+306 - STRADA PROVINCIALE 26 ANAGNI ACUTO
+307 - STRADA PROVINCIALE 56 ANAGNI FERENTINO
+308 - VIA ANAGNI GAVIGNANO
+309 - STRADA PROVINCIALE 118 ANAGNI PALIANO
+30 - VICOLO DEL GALLO
+310 - VIA ANAGNI PIGLIO
+311 - VIA AREA SVILUPPO INDUSTRIALE PRIMA
+312 - VIA BAGNARA
+314 - VIA BARONE
+315 - VIA BARONE FONTANA CERASO
+316 - VIA BASSANO
+317 - VIA BASSANO NAVICELLA
+318 - VIA BASSANO OSTERIA FONTANA
+319 - VIA BASSO PRATO
+31 - VIA GIUSEPPE GARIBALDI
+321 - VIA BELVEDERE CASTELLONE
+322 - VIA BELVEDERE
+323 - VIA BERSO&apos; RIO
+324 - VIA BONIFICA SUD
+325 - VIA DEL BOSCHETTO
+326 - VIA CALZATORA
+327 - VIA CAMPETELLE
+328 - VIA CANGIANO
+329 - VIA CANGIANO SAN BARTOLOMEO
+32 - VICOLO DEL GAROFALO
+331 - VIA CANZATORA CASA MATERA
+332 - VIA CAPANNACCIO
+333 - VIA DEL CAPITOLO
+335 - VIA CAPOCROCE CAVONE
+33 - VICOLO DEL GATTINARO
+341 - VIA CASALE LAURI
+342 - VIA CASALE MORTELLA
+343 - VIA CASALE SANTO SPIRITO
+344 - VIA CASALE SANTO SPIRITO CENTOCELLE
+346 - VIA DEL CASALE DI VILLAMAGNA
+347 - VIA CASALOTTO
+348 - VIA CASE COTTE FONTANA DELLE MONACHE
+34 - PORTICO DIOMEDE GIANNUZZI
+350 - VIA CASILINA PANTANELLO
+351 - VIA CASILINA STAZIONE ANAGNI
+352 - STRADA PROVINCIALE 12 CASILINA STAZIONE SGURGOLA
+353 - VIA CASTAGNOLA
+354 - VIA CASTAGNOLA SANTA CROCE
+358 - VIA CAVA BESTIALE
+359 - VIA CAVA DELLA BRECCIA
+35 - PORTICO GIMINIANI
+363 - VIA CAVICELLA DEL CASALE
+365 - STRADA VICINALE CAVONE DELLA BADIA
+366 - VIA CAVONE DI COLLACCIANO
+367 - VIA CAVONE VALLE PANTANA
+36 - VIA GIOVANNI GIMINIANI
+372 - VIA DELLE CERCIOLE
+373 - VIA CERERE NAVICELLA
+375 - VIA CIAMMOTTE
+376 - VIA CIAVATTINO
+378 - VIA CISOGNA
+37 - VIA VINCENZO GIMINIANI
+380 - VIA CISTERNOLA VADO MASO
+384 - VIA CODARDA
+385 - VIA COLLACCIANO
+386 - VIA COLLACCIANO PANTANE
+387 - VIA COLLACCIANO PONTICELLO
+389 - VIA COLLE BIANCO
+391 - VIA COLLE CERASO AIA LA MACCHIA
+394 - VIA COLLE FIORE
+395 - VIA COLLE GIGLIO
+396 - VIA COLLE LARDO
+398 - VIA COLLE MOSE&apos;
+399 - VIA COLLE ORSINO
+39 - VIA AMBROGIO LEGGERI
+3 - VIA ATTILIO ARCI
+401 - VIA COLLE DEL PERO
+402 - VIA COLLE PORIO
+407 - VIA COLLE RANUCCIO
+408 - VIA COLLE RUSPITTO
+40 - VIA LEONE TREDICESIMO
+410 - VIA COLLE SARICONE
+413 - VIA COLLE TICCHIO TORRE FESSA
+417 - VIA CONCERVINO
+419 - VIA DELLA CONSOLAZIONE
+41 - VICOLO LIBECCIO
+420 - VIA DELLA CONSORTINA
+422 - VIA CUCUGNANO
+424 - VIA ERCOLANA
+425 - VIA FAMELICA
+426 - VIA FARANTELLO
+427 - VIA FARANTELLO VIGNOLA
+428 - VIA DELLE FARNETA
+42 - PORTICO UMBERTO LITTI
+430 - VIA FILONARDA
+431 - VIA FONTANA DI FUCIGNO
+433 - VIA FONTANA D&apos;OLENA
+434 - VIA FONTANA SANT&apos;ANGELO
+436 - VIA FONTANA VETERE
+437 - VIA FONTANA DEL VISCIOLO
+439 - VIA FORMELLI
+43 - VICOLO DEL MACELLO
+440 - VIA FORMELLI ENSOLA
+441 - VIA FOSSATE DELLA BADIA
+444 - VIALE DELLE FOSSE
+446 - VIA FOSSO DEL FICO
+447 - VIA FRATTA ROTONDA
+448 - VIA FRATTA ROTONDA VADO LARGO
+449 - VIA FUCIGNO
+44 - LARGO DEL MACELLO
+450 - VIA FUCIGNO PORCIANO
+451 - VIA DEL GIARDINO
+453 - VIA GLORIA COLLE BIANCO
+455 - VIA GRICCIANO COLLE BIANCO
+456 - VIA GROTTA GRANO
+458 - VIA ICONA DANDINI PONTE VARANO
+459 - VIA ICONA SANT&apos;ISIDORO
+45 - VIA MADONNA DELLE GRAZIE
+460 - VIA DEI LEPINI
+461 - VIA LOISO COSTA RICCETTO
+462 - VIA LOISO SANTA GIUSTA
+463 - VIA MACERATA LE FOSSE
+464 - VIA MADONNA DI LORETO
+465 - VIA MADONNA LORETO SANTO SPIRITO
+467 - VIA MADONNA DI TUFANO FUMONE
+468 - VIA MADONNA DI TUFANO PORCIANO
+469 - VIA MICHETTO
+46 - VIALE GIACOMO MATTEOTTI
+470 - VIA MOLA DEL LAGO
+471 - VIA MOLA DELLE MONACHE
+472 - VIA MOLA DI SOPRA
+473 - VIA MOLA DI SOTTO
+474 - VIA MOLA SANTA MARIA
+475 - VIA MONTE MARINO
+476 - TRAVERSA PRIMA DI VIA MONTE MARINO
+478 - VIA MONTE DI NOE&apos;
+479 - VIA MONTE PISTILLO
+47 - VICOLO MENGHI
+483 - STRADA REGIONALE 6 CASILINA
+485 - VIA ORZARA
+486 - VIA OSTERIA DELLA FONTANA
+487 - VIA OSTERIA FONTANA PRATO SERENO
+488 - VIA OSTERIA FONTANA VILLAMAGNA GORGA
+48 - VICOLO MESMER
+490 - VIA OSTERIA LA NOCE FOSSO DEL LUPO
+492 - VIA PADUNI
+495 - VIA PANTANELLO
+496 - VIA PASCIONE
+498 - VIA PASTINE
+499 - VIA PATERNO
+49 - VICOLO DEI MONTANI
+4 - VIA DEGLI ARCI
+504 - VIA PEDICATE PORCIANO CAVE
+505 - VIA PERELLE CASARENE
+507 - STRADONE PEROTTI
+50 - VICOLO DEL MONTANO
+510 - VIA DEL PISCIARELLO
+511 - VIA PIZZOLUNGO
+513 - VIA PONTE DELLA NOCICCHIA
+514 - VIA PONTE DEL PAPA
+515 - VIA PONTE DELLE TAVOLE
+517 - VIA PONTE SPALLATO FOSSO DEL LUPO
+519 - VIA PONTE DEL TREMIO COLLE DEL SIGNORE
+51 - VICOLO DEL MORO
+520 - VIA PORTA TUFOLI ANAGNI ACUTO
+521 - VIA PRATI GALLINARI
+522 - VIA PRATO DELL&apos;OLMO
+524 - VIA PRATO SERENO ICONA SANT&apos;ISIDORO
+525 - VIA PRETURI
+526 - VIA PRETURI COLLE PERO PORCIANO
+527 - VIA PRIGNANO DI SOPRA
+528 - VIA PRIGNANO DI SOTTO
+529 - VIA PUCINISCO
+530 - VIA PUZZICO
+532 - VIA QUERCIA D&apos;ATTORI PRIMA
+533 - VIA QUERCIA D&apos;ATTORI SECONDA
+534 - VIA RAMACCIA
+53 - VIA NUOVA
+540 - VIA DEL RIO DELLA SALA
+541 - VIA DELLA RISERVA PRIMA
+542 - VIA DELLA RISERVA SECONDA
+543 - VIA DELLA RISERVA TERZA
+544 - VIA RITIRO
+546 - VIA ROMAGNANO
+547 - VIA ROMAGNANO FONTANA VALLE
+548 - VIA RONGHINO
+549 - VIA SABATINO
+54 - VICOLO DELL&apos;OSTERIA
+5500 - VIA SAN GIUSEPPE
+5501 - PIAZZA SAN GIUSEPPE
+5504 - VIA CASALE DELL&apos; INFERNO NOCICCHIA
+5506 - VIA VECCHIA ANAGNI ACUTO
+5508 - TRAVERSA SECONDA DI VIA VIGNOLA
+550 - VIA LA SALA STANZE DI FOGGIA
+553 - VIA SANTA CECILIA
+556 - VIA SANTA CROCE ARENA
+55 - VIA DEL PARLATORIO
+560 - VIA SANTA FELICITA QUARTARO
+561 - STRADA PROVINCIALE 164 SAN FILIPPO
+564 - VIA ROTABILE SAN FRANCESCO
+566 - VIA SAN LORENZO AVERSA
+567 - VIA SAN MAGNO
+569 - VIA SANTO SENSINO
+56 - VICOLO PASQUINO
+570 - VIA SAN VINCENZO
+571 - VIA LE SASSERA
+574 - VIA DEI SERRONI
+579 - VIA STAZIONE ANAGNI MOROLO
+57 - VIA DELLA PESCHIERA
+580 - STRADA COMUNALE STAZIONE DI SGURGOLA VILLAMAGNA
+583 - VIA TARTARALTA DI SOPRA
+584 - VIA TARTARALTA DI SOTTO
+588 - VIA TINELLO FARANTELLO
+589 - VIA TOFE PISTONE
+593 - VIA TORRE VAGARINI AIA LA MACCHIA
+594 - VIA TORRICELLA
+596 - VIA PORTA TUFOLI
+597 - VIA TUFO RANZANI
+59 - VIA PISCINA
+5 - VIA BAGNO
+600 - VIA VADO LARGO
+602 - VIA VADO NOCICCHIA STANZE MATTEOZZI
+603 - VIA VADO DELLA SCHIAPPA
+604 - VIA VALCANELLO
+606 - VIA VALLE DI DENTRO
+608 - VIA DELLA VALLECHERA
+609 - VIA VALLE QUAGLIOZZA
+60 - VICOLO PONENTE
+610 - VIA VALLE SANT&apos; ANGELO
+612 - VIA VASCA MAGNA PORCI
+614 - VIA VECCHIA DI SAN FRANCESCO
+616 - VIA VICO
+617 - VIA VIGNOLA
+619 - TRAVERSA PRIMA DI VIA VIGNOLA
+61 - VICOLO DEL PONTE
+621 - STRADA PROVINCIALE 168 VILLAMAGNA
+622 - VIA MENSA TINELLO
+624 - VIA ANTICOLANA
+62 - VIA DEL POPOLO
+632 - VIA MADONNA DI TUFANO FORMELLI
+633 - VIA LA FORESTA
+63 - VIA UMBERTO PUCCINI
+644 - VIA DELLA FORMA
+64 - VIA DEI PULPITI
+650 - VIA MOROLENSE
+65 - VIALE REGINA MARGHERITA
+662 - VIA TARTARALTA MADONNA DI TUFANO
+664 - VIA NAVICELLA
+667 - VIA FONTANA CERASO
+668 - VIA PRETURI COLLE PERO
+669 - VIA COLLE VECCHIARINO
+66 - VIA DOMENICO RICCI
+670 - VIA CASALE SAN PIETRO
+672 - VIA VECCHIA CASILINA
+677 - VIA PRETURI MADONNA DI TUFANO
+67 - VICOLO DEL RICCIO
+682 - VIA MURAGLIONE FERENTINO
+68 - VIALE ROMA
+695 - VIA RIGLIANO
+6 - VIA LIONELLO BELLI
+702 - VIA GENERALE CARLO ALBERTO DALLA CHIESA
+703 - VICOLO VITO VITI
+704 - VIA DONATELLA POTENZIANI
+70 - VICOLO DEL SALTO
+71 - VICOLO SALTRINARI
+72 - VIA PIO SALVATI
+73 - VIA COLLE SAN DOMENICO
+74 - VICOLO SANT&apos;ANGELO
+75 - VICOLONE SANT&apos;ANGELO
+76 - VIA DELLA SANITA&apos;
+77 - VIA SANTA CHIARA
+79 - VIA SAN GIORGETTO
+7 - VIA NAZZARENO BOSCHI
+80 - VIA VECCHIA SAN MAGNO
+81 - VIA SAN MICHELE
+82 - BORGO SAN NICOLA
+83 - VIA SAN NICOLA
+84 - VIA SAN PANCRAZIO
+85 - VIA SAN PAOLO
+86 - VICOLO SANTO STEFANO
+88 - VICOLO DEL SERPE
+8 - VIA GIUSEPPE BRENVI
+902 - STRADA COMUNALE CAPANNACCIO
+904 - STRADA VICINALE SAN MAGNO
+90 - VICOLO DEL SORDO
+910 - STRADA VICINALE PETITTI
+912 - STRADA PROVINCIALE MADONNA DI TUFANO
+915 - VIA PORTA TUFOLI ACUTO
+916 - VIA COLLE FIORE ANAGNI ACUTO
+919 - STRADA VICINALE FAMELICA
+91 - VIA SOTTO LA PIAZZA
+920 - TRAVERSA PRIMA DI VIA FOSSATE DELLA BADIA
+93 - VIA DELLO SPIZZONE
+94 - VIA NINO STOPPANI
+96 - VICOLO DELLE TERME
+97 - VIA DEL TRIVIO
+98 - VIA TUFOLI
+99 - VIA DELLA VALLE
+9 - VIA GASPARE CALVARIO
+Bash Parse KML with Python to analyze address data structure
+IN
+# Look for CIVICO_ES patterns - examine a few records with non-empty ESP_LETT_ES or special CIVICO_ES
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+ns = {'kml': 'http://www.opengis.net/kml/2.2'}
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+print(f'Total records: {len(records)}')
+
+# Show records with non-empty ESP_LETT_ES
+special = [r for r in records if r.get('ESP_LETT_ES','').strip()]
+print(f'Records with ESP_LETT_ES: {len(special)}')
+for r in special[:20]:
+    print(r)
+"
+
+OUT
+Total records: 11204
+Records with ESP_LETT_ES: 533
+{'COD_TOPONIMO': '100', 'CIVICO': '1A', 'CIVICO_ES': '1A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '100 - VIA ENRICO VIGNA', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '7', 'coordinates': '13.1562784305,41.7425982888,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '80A', 'CIVICO_ES': '80A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '6', 'coordinates': '13.1544231394,41.743786674,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '112A', 'CIVICO_ES': '112A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '6', 'coordinates': '13.1557462186,41.7427348814,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '175A', 'CIVICO_ES': '175A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '7', 'coordinates': '13.1571040903,41.7424623545,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '10A', 'CIVICO_ES': '10A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '4', 'coordinates': '13.1531321186,41.7445882003,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '199A', 'CIVICO_ES': '199A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '7', 'coordinates': '13.1577846795,41.7423851187,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '265A', 'CIVICO_ES': '265A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '10', 'coordinates': '13.1598352521,41.7424918581,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '242A', 'CIVICO_ES': '242A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '11', 'coordinates': '13.1609446787,41.7426591791,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '242B', 'CIVICO_ES': '242B', 'ESP_LETT_ES': 'B', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '11', 'coordinates': '13.1609788736,41.7426846473,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '242C', 'CIVICO_ES': '242C', 'ESP_LETT_ES': 'C', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '11', 'coordinates': '13.161016057,41.742711163,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '264B', 'CIVICO_ES': '264B', 'ESP_LETT_ES': 'B', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '12', 'coordinates': '13.1621020421,41.7421372538,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '264A', 'CIVICO_ES': '264A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '12', 'coordinates': '13.1621356807,41.7421540645,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '264C', 'CIVICO_ES': '264C', 'ESP_LETT_ES': 'C', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '12', 'coordinates': '13.1620512433,41.742116665,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '264D', 'CIVICO_ES': '264D', 'ESP_LETT_ES': 'D', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '12', 'coordinates': '13.1620017916,41.7421101012,0'}
+{'COD_TOPONIMO': '101', 'CIVICO': '264E', 'CIVICO_ES': '264E', 'ESP_LETT_ES': 'E', 'TOPONIMO': '101 - VIA VITTORIO EMANUELE SECONDO', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '12', 'coordinates': '13.1620071848,41.7421297737,0'}
+{'COD_TOPONIMO': '103', 'CIVICO': '10A', 'CIVICO_ES': '10AY', 'ESP_LETT_ES': 'A', 'TOPONIMO': '103 - VICOLO ZANCATI', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '10', 'coordinates': '13.1594063693,41.7425220288,0'}
+{'COD_TOPONIMO': '106', 'CIVICO': '5A', 'CIVICO_ES': '5AY', 'ESP_LETT_ES': 'A', 'TOPONIMO': "106 - PIAZZA SANT'ANGELO", 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '9', 'coordinates': '13.1559701237,41.7421294031,0'}
+{'COD_TOPONIMO': '11', 'CIVICO': '20A', 'CIVICO_ES': '20A', 'ESP_LETT_ES': 'AQ', 'TOPONIMO': '11 - VIA CASE NUOVE', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '5', 'coordinates': '13.1543001572,41.7402643245,0'}
+{'COD_TOPONIMO': '11', 'CIVICO': '17A', 'CIVICO_ES': '17A', 'ESP_LETT_ES': 'A', 'TOPONIMO': '11 - VIA CASE NUOVE', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '5', 'coordinates': '13.1539610603,41.7403899442,0'}
+{'COD_TOPONIMO': '11', 'CIVICO': '13A', 'CIVICO_ES': '13AY', 'ESP_LETT_ES': 'A', 'TOPONIMO': '11 - VIA CASE NUOVE', 'DATA_KML': '17/03/2017', 'SEZIONE_DI_CENSIMENTO': '5', 'coordinates': '13.1539514157,41.740474314,0'}
+Bash Analyze CIVICO vs CIVICO_ES differences and Y suffix pattern
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Analyze CIVICO_ES suffix patterns: Y suffix
+y_suffix = [r for r in records if r.get('CIVICO_ES','').endswith('Y')]
+print(f'CIVICO_ES ending in Y: {len(y_suffix)}')
+for r in y_suffix[:15]:
+    print(f\"  CIVICO={r['CIVICO']}, CIVICO_ES={r['CIVICO_ES']}, ESP_LETT={r['ESP_LETT_ES']}\")
+
+print()
+# CIVICO vs CIVICO_ES when different
+diff = [r for r in records if r.get('CIVICO','') != r.get('CIVICO_ES','')]
+print(f'Records where CIVICO != CIVICO_ES: {len(diff)}')
+for r in diff[:20]:
+    print(f\"  CIVICO={r['CIVICO']}, CIVICO_ES={r['CIVICO_ES']}, ESP_LETT={r['ESP_LETT_ES']}, TOP={r['TOPONIMO']}\")
+"
+
+OUT
+CIVICO_ES ending in Y: 1971
+  CIVICO=1, CIVICO_ES=1Y, ESP_LETT=
+  CIVICO=4, CIVICO_ES=4Y, ESP_LETT=
+  CIVICO=6, CIVICO_ES=6Y, ESP_LETT=
+  CIVICO=8, CIVICO_ES=8Y, ESP_LETT=
+  CIVICO=12, CIVICO_ES=12Y, ESP_LETT=
+  CIVICO=24, CIVICO_ES=24Y, ESP_LETT=
+  CIVICO=10A, CIVICO_ES=10AY, ESP_LETT=A
+  CIVICO=20, CIVICO_ES=20Y, ESP_LETT=
+  CIVICO=28, CIVICO_ES=28Y, ESP_LETT=
+  CIVICO=44, CIVICO_ES=44Y, ESP_LETT=
+  CIVICO=4, CIVICO_ES=4Y, ESP_LETT=
+  CIVICO=5, CIVICO_ES=5Y, ESP_LETT=
+  CIVICO=5A, CIVICO_ES=5AY, ESP_LETT=A
+  CIVICO=6, CIVICO_ES=6Y, ESP_LETT=
+  CIVICO=7, CIVICO_ES=7Y, ESP_LETT=
+
+Records where CIVICO != CIVICO_ES: 8886
+  CIVICO=1, CIVICO_ES=1Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=4, CIVICO_ES=4Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=6, CIVICO_ES=6Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=8, CIVICO_ES=8Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=12, CIVICO_ES=12Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=24, CIVICO_ES=24Y, ESP_LETT=, TOP=1 - VIA RAFFAELE AMBROSETTI
+  CIVICO=2A, CIVICO_ES=X, ESP_LETT=, TOP=10 - VIA ONORATO CAPO
+  CIVICO=43A, CIVICO_ES=X1, ESP_LETT=, TOP=10 - VIA ONORATO CAPO
+  CIVICO=63, CIVICO_ES=X2, ESP_LETT=, TOP=10 - VIA ONORATO CAPO
+  CIVICO=53A, CIVICO_ES=X, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=124A, CIVICO_ES=X2, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=137A, CIVICO_ES=X3, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=171A, CIVICO_ES=X4, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=211, CIVICO_ES=, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=283A, CIVICO_ES=X6, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=203A, CIVICO_ES=X5, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=236A, CIVICO_ES=X8, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=291A, CIVICO_ES=X7, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=252A, CIVICO_ES=X8, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=278A, CIVICO_ES=, ESP_LETT=, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+Bash Analyze X prefix patterns, empty fields, and census sections
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Analyze CIVICO_ES patterns with X
+x_patterns = [r for r in records if r.get('CIVICO_ES','').startswith('X')]
+print(f'CIVICO_ES starting with X: {len(x_patterns)}')
+from collections import Counter
+x_vals = Counter(r['CIVICO_ES'] for r in x_patterns)
+print('X value distribution:')
+for v, c in sorted(x_vals.items()):
+    print(f'  {v}: {c}')
+
+print()
+# empty CIVICO_ES
+empty_es = [r for r in records if r.get('CIVICO_ES','') == '']
+print(f'Empty CIVICO_ES: {len(empty_es)}')
+for r in empty_es[:10]:
+    print(f\"  CIVICO={r['CIVICO']}, TOP={r['TOPONIMO']}\")
+
+print()
+# unique SEZIONE_DI_CENSIMENTO values
+sections = Counter(r.get('SEZIONE_DI_CENSIMENTO','') for r in records)
+print('Census sections distribution:')
+for v, c in sorted(sections.items(), key=lambda x: (len(x[0]), x[0])):
+    print(f'  Sezione {v}: {c} points')
+"
+
+OUT
+CIVICO_ES starting with X: 1348
+X value distribution:
+  X: 192
+  X1: 142
+  X10: 37
+  X11: 29
+  X12: 29
+  X13: 26
+  X14: 23
+  X15: 22
+  X16: 18
+  X17: 18
+  X18: 12
+  X19: 15
+  X1Y*: 1
+  X2: 107
+  X20: 14
+  X21: 13
+  X22: 13
+  X23: 13
+  X24: 10
+  X25: 9
+  X26: 9
+  X27: 9
+  X28: 9
+  X29: 7
+  X3: 87
+  X30: 9
+  X31: 9
+  X32: 8
+  X33: 9
+  X34: 7
+  X35: 8
+  X36: 7
+  X37: 6
+  X38: 6
+  X39: 6
+  X4: 78
+  X40: 6
+  X41: 4
+  X42: 4
+  X43: 4
+  X44: 5
+  X45: 5
+  X46: 3
+  X47: 2
+  X48: 3
+  X49: 3
+  X5: 65
+  X50: 3
+  X51: 3
+  X52: 3
+  X53: 3
+  X54: 2
+  X55: 4
+  X56: 3
+  X57: 3
+  X58: 2
+  X59: 2
+  X6: 59
+  X61: 1
+  X62: 1
+  X63: 1
+  X64: 1
+  X65: 1
+  X69: 1
+  X7: 51
+  X72: 1
+  X8: 46
+  X9: 36
+
+Empty CIVICO_ES: 4280
+  CIVICO=211, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=278A, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=10B, TOP=103 - VICOLO ZANCATI
+  CIVICO=2, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=4, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=4A, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=2A, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=4B, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=6, TOP=2120 - STRADA VICINALE FONTANA VETERE
+  CIVICO=6A, TOP=2120 - STRADA VICINALE FONTANA VETERE
+
+Census sections distribution:
+  Sezione : 19 points
+  Sezione 0: 38 points
+  Sezione 1: 141 points
+  Sezione 2: 235 points
+  Sezione 3: 240 points
+  Sezione 4: 370 points
+  Sezione 5: 425 points
+  Sezione 6: 329 points
+  Sezione 7: 289 points
+  Sezione 8: 380 points
+  Sezione 9: 432 points
+  Sezione 10: 242 points
+  Sezione 11: 277 points
+  Sezione 12: 459 points
+  Sezione 13: 302 points
+  Sezione 30: 364 points
+  Sezione 31: 150 points
+  Sezione 33: 131 points
+  Sezione 34: 15 points
+  Sezione 37: 24 points
+  Sezione 38: 27 points
+  Sezione 39: 156 points
+  Sezione 40: 21 points
+  Sezione 41: 110 points
+  Sezione 42: 51 points
+  Sezione 43: 106 points
+  Sezione 45: 34 points
+  Sezione 46: 56 points
+  Sezione 47: 28 points
+  Sezione 48: 13 points
+  Sezione 49: 27 points
+  Sezione 50: 16 points
+  Sezione 54: 39 points
+  Sezione 55: 26 points
+  Sezione 57: 33 points
+  Sezione 58: 15 points
+  Sezione 59: 25 points
+  Sezione 62: 48 points
+  Sezione 63: 82 points
+  Sezione 64: 88 points
+  Sezione 65: 411 points
+  Sezione 66: 221 points
+  Sezione 67: 153 points
+  Sezione 68: 175 points
+  Sezione 69: 269 points
+  Sezione 70: 370 points
+  Sezione 72: 75 points
+  Sezione 73: 111 points
+  Sezione 74: 180 points
+  Sezione 75: 56 points
+  Sezione 76: 107 points
+  Sezione 77: 105 points
+  Sezione 78: 10 points
+  Sezione 79: 268 points
+  Sezione 80: 144 points
+  Sezione 81: 130 points
+  Sezione 82: 20 points
+  Sezione 83: 103 points
+  Sezione 84: 17 points
+  Sezione 85: 9 points
+  Sezione 86: 5 points
+  Sezione 87: 2 points
+  Sezione 88: 48 points
+  Sezione 89: 44 points
+  Sezione 90: 5 points
+  Sezione 91: 178 points
+  Sezione 92: 10 points
+  Sezione 93: 47 points
+  Sezione 94: 33 points
+  Sezione 95: 7 points
+  Sezione 96: 32 points
+  Sezione 97: 38 points
+  Sezione 98: 68 points
+  Sezione 99: 77 points
+  Sezione 100: 26 points
+  Sezione 101: 1 points
+  Sezione 102: 131 points
+  Sezione 103: 9 points
+  Sezione 104: 16 points
+  Sezione 106: 6 points
+  Sezione 107: 41 points
+  Sezione 108: 8 points
+  Sezione 109: 5 points
+  Sezione 110: 18 points
+  Sezione 111: 3 points
+  Sezione 112: 4 points
+  Sezione 113: 24 points
+  Sezione 114: 5 points
+  Sezione 115: 4 points
+  Sezione 116: 7 points
+  Sezione 117: 7 points
+  Sezione 118: 29 points
+  Sezione 119: 3 points
+  Sezione 120: 15 points
+  Sezione 122: 13 points
+  Sezione 123: 6 points
+  Sezione 124: 18 points
+  Sezione 125: 1 points
+  Sezione 126: 7 points
+  Sezione 127: 7 points
+  Sezione 128: 4 points
+  Sezione 129: 6 points
+  Sezione 130: 19 points
+  Sezione 131: 13 points
+  Sezione 132: 22 points
+  Sezione 133: 1 points
+  Sezione 134: 6 points
+  Sezione 135: 23 points
+  Sezione 136: 7 points
+  Sezione 137: 5 points
+  Sezione 138: 3 points
+  Sezione 139: 11 points
+  Sezione 140: 2 points
+  Sezione 141: 3 points
+  Sezione 142: 3 points
+  Sezione 143: 9 points
+  Sezione 144: 6 points
+  Sezione 145: 8 points
+  Sezione 146: 30 points
+  Sezione 147: 5 points
+  Sezione 148: 2 points
+  Sezione 149: 12 points
+  Sezione 150: 7 points
+  Sezione 151: 9 points
+  Sezione 152: 4 points
+  Sezione 153: 3 points
+  Sezione 154: 8 points
+  Sezione 155: 5 points
+  Sezione 156: 8 points
+  Sezione 157: 4 points
+  Sezione 158: 2 points
+  Sezione 159: 6 points
+  Sezione 161: 4 points
+  Sezione 162: 4 points
+  Sezione 163: 4 points
+  Sezione 164: 6 points
+  Sezione 165: 10 points
+  Sezione 166: 4 points
+  Sezione 167: 5 points
+  Sezione 168: 5 points
+  Sezione 170: 4 points
+  Sezione 171: 8 points
+  Sezione 172: 2 points
+  Sezione 173: 13 points
+  Sezione 174: 17 points
+  Sezione 175: 31 points
+  Sezione 176: 19 points
+  Sezione 177: 20 points
+  Sezione 178: 5 points
+  Sezione 179: 14 points
+  Sezione 181: 11 points
+  Sezione 182: 3 points
+  Sezione 183: 16 points
+  Sezione 184: 5 points
+  Sezione 185: 13 points
+  Sezione 186: 4 points
+  Sezione 187: 9 points
+  Sezione 188: 13 points
+  Sezione 189: 15 points
+  Sezione 190: 18 points
+  Sezione 191: 4 points
+  Sezione 192: 23 points
+  Sezione 193: 11 points
+  Sezione 195: 16 points
+  Sezione 196: 11 points
+  Sezione 197: 9 points
+  Sezione 198: 33 points
+  Sezione 199: 19 points
+  Sezione 200: 1 points
+  Sezione 202: 3 points
+  Sezione 203: 4 points
+  Sezione 204: 16 points
+  Sezione 205: 13 points
+  Sezione 206: 12 points
+  Sezione 207: 6 points
+  Sezione 208: 9 points
+  Sezione 209: 13 points
+  Sezione 210: 7 points
+  Sezione 211: 5 points
+  Sezione 212: 11 points
+  Sezione 213: 2 points
+  Sezione 214: 6 points
+  Sezione 215: 8 points
+  Sezione 216: 6 points
+  Sezione 217: 35 points
+  Sezione 218: 6 points
+  Sezione 219: 14 points
+  Sezione 220: 7 points
+  Sezione 221: 12 points
+  Sezione 222: 5 points
+  Sezione 223: 4 points
+  Sezione 224: 10 points
+  Sezione 225: 1 points
+  Sezione 226: 12 points
+  Sezione 227: 2 points
+  Sezione 228: 10 points
+  Sezione 229: 4 points
+  Sezione 230: 7 points
+  Sezione 231: 23 points
+  Sezione 232: 6 points
+  Sezione 233: 2 points
+  Sezione 234: 5 points
+  Sezione 235: 4 points
+  Sezione 236: 6 points
+  Sezione 237: 10 points
+  Sezione 238: 5 points
+  Sezione 239: 12 points
+  Sezione 240: 15 points
+  Sezione 241: 3 points
+  Sezione 242: 285 points
+  Sezione 243: 2 points
+  Sezione 244: 16 points
+  Sezione 245: 9 points
+  Sezione 246: 75 points
+  Sezione 247: 2 points
+  Sezione 248: 4 points
+Bash Analyze COD_TOPONIMO ranges, street types, and even/odd distribution
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Analyze COD_TOPONIMO ranges
+from collections import Counter
+cod_top = [int(r['COD_TOPONIMO']) for r in records if r.get('COD_TOPONIMO','').isdigit()]
+print(f'COD_TOPONIMO range: {min(cod_top)} - {max(cod_top)}')
+print()
+
+# Ranges of COD_TOPONIMO: Urban center (1-200 range), Rural outlying areas (300+, 2000s, 5000s, 900s)
+# Let's look at the street type distribution
+from collections import Counter
+tipo = Counter()
+for name in open('/tmp/all_streets.txt'):
+    name = name.strip()
+    parts = name.split(' - ', 1)
+    if len(parts) == 2:
+        street_name = parts[1]
+        first_word = street_name.split()[0]
+        tipo[first_word] += 1
+
+print('Street types:')
+for t, c in sorted(tipo.items(), key=lambda x: -x[1]):
+    print(f'  {t}: {c}')
+
+print()
+# Analyze civic numbers - even vs odd distribution per street
+even_odd = {'even': 0, 'odd': 0, 'other': 0}
+for r in records:
+    civico = r.get('CIVICO','')
+    # extract just the numeric part
+    num_part = ''
+    for c in civico:
+        if c.isdigit():
+            num_part += c
+        else:
+            break
+    if num_part:
+        n = int(num_part)
+        if n % 2 == 0:
+            even_odd['even'] += 1
+        else:
+            even_odd['odd'] += 1
+    else:
+        even_odd['other'] += 1
+print('Even/Odd civic number distribution:', even_odd)
+"
+
+OUT
+COD_TOPONIMO range: 1 - 5508
+
+Street types:
+  VIA: 264
+  VICOLO: 39
+  STRADA: 24
+  PIAZZA: 18
+  TRAVERSA: 16
+  PORTICO: 5
+  LARGO: 5
+  VIALE: 4
+  CIRCONVALLAZIONE: 1
+  STRADONE: 1
+  VICOLONE: 1
+  BORGO: 1
+
+Even/Odd civic number distribution: {'even': 5760, 'odd': 5425, 'other': 19}
+Bash Analyze zones by COD_TOPONIMO and ESP_LETT_ES values
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Group COD_TOPONIMO by range zones
+zones = {'1-99 (urban center)':0, '100-299 (urban)':0, '300-999 (suburban/rural)':0, '2000-2999 (extra-urban)':0, '5000-5999 (new/recent)':0, '900-999 (strade comunali)':0}
+for r in records:
+    c = r.get('COD_TOPONIMO','')
+    if c.isdigit():
+        n = int(c)
+        if 1 <= n <= 99:
+            zones['1-99 (urban center)'] += 1
+        elif 100 <= n <= 299:
+            zones['100-299 (urban)'] += 1
+        elif 300 <= n <= 699:
+            zones['300-999 (suburban/rural)'] += 1
+        elif 700 <= n <= 999:
+            zones['900-999 (strade comunali)'] += 1
+        elif 2000 <= n <= 2999:
+            zones['2000-2999 (extra-urban)'] += 1
+        elif 5000 <= n <= 5999:
+            zones['5000-5999 (new/recent)'] += 1
+
+print('Records by COD_TOPONIMO zone:')
+for z, c in zones.items():
+    print(f'  {z}: {c}')
+
+print()
+# Show ESP_LETT_ES unique values
+from collections import Counter
+esp = Counter(r.get('ESP_LETT_ES','') for r in records)
+print('ESP_LETT_ES unique values:')
+for v, c in sorted(esp.items(), key=lambda x: -x[1]):
+    if v:
+        print(f'  \"{v}\": {c}')
+
+print()
+# records with unusual ESP_LETT_ES (not just letters A-Z or AQ)
+unusual = [r for r in records if r.get('ESP_LETT_ES','') not in ('', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')]
+print(f'Unusual ESP_LETT_ES: {len(unusual)}')
+for r in unusual[:15]:
+    print(f\"  CIVICO={r['CIVICO']}, CIVICO_ES={r['CIVICO_ES']}, ESP_LETT={r['ESP_LETT_ES']}\")
+"
+
+OUT
+Records by COD_TOPONIMO zone:
+  1-99 (urban center): 2694
+  100-299 (urban): 628
+  300-999 (suburban/rural): 6464
+  2000-2999 (extra-urban): 1033
+  5000-5999 (new/recent): 77
+  900-999 (strade comunali): 289
+
+ESP_LETT_ES unique values:
+  "A": 204
+  "B": 122
+  "C": 63
+  "D": 38
+  "E": 30
+  "F": 21
+  "G": 13
+  "H": 11
+  "I": 9
+  "L": 6
+  "M": 4
+  "N": 4
+  "O": 3
+  "P": 3
+  "AQ": 1
+  "Q": 1
+
+Unusual ESP_LETT_ES: 1
+  CIVICO=20A, CIVICO_ES=20A, ESP_LETT=AQ
+Bash Analyze coordinates, dates, and a full street example
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Coordinate bounding box
+lons = []
+lats = []
+for r in records:
+    if r.get('coordinates'):
+        parts = r['coordinates'].split(',')
+        if len(parts) >= 2:
+            lons.append(float(parts[0]))
+            lats.append(float(parts[1]))
+print(f'Coordinate bounds:')
+print(f'  Lon: {min(lons):.6f} to {max(lons):.6f}')
+print(f'  Lat: {min(lats):.6f} to {max(lats):.6f}')
+print(f'  Center: {sum(lons)/len(lons):.6f}, {sum(lats)/len(lats):.6f}')
+
+print()
+# date distribution
+from collections import Counter
+dates = Counter(r.get('DATA_KML','') for r in records)
+print('DATA_KML values:')
+for d, c in sorted(dates.items()):
+    print(f'  {d}: {c}')
+
+print()
+# Example of a street with Y suffix meaning (could relate to side of street or old code)
+# Show first street fully: 1 - VIA RAFFAELE AMBROSETTI
+street1 = [r for r in records if r.get('COD_TOPONIMO','') == '1']
+print(f'VIA RAFFAELE AMBROSETTI ({len(street1)} civics):')
+# Sort by civic number
+def sort_key(r):
+    c = r['CIVICO']
+    num = ''
+    for ch in c:
+        if ch.isdigit(): num += ch
+        else: break
+    return int(num) if num else 0
+
+street1_sorted = sorted(street1, key=sort_key)
+for r in street1_sorted:
+    print(f\"  CIVICO={r['CIVICO']:5s} CIVICO_ES={r['CIVICO_ES']:6s} ESP={r['ESP_LETT_ES']:3s} SEZ={r['SEZIONE_DI_CENSIMENTO']}\")
+"
+
+OUT
+Coordinate bounds:
+  Lon: 13.067888 to 13.231911
+  Lat: 41.673254 to 41.792205
+  Center: 13.154181, 41.739252
+
+DATA_KML values:
+  : 19
+  17/03/2017: 11185
+
+VIA RAFFAELE AMBROSETTI (22 civics):
+  CIVICO=1     CIVICO_ES=1Y     ESP=    SEZ=7
+  CIVICO=2     CIVICO_ES=2      ESP=    SEZ=7
+  CIVICO=3     CIVICO_ES=3      ESP=    SEZ=7
+  CIVICO=4     CIVICO_ES=4Y     ESP=    SEZ=7
+  CIVICO=5     CIVICO_ES=5      ESP=    SEZ=7
+  CIVICO=6     CIVICO_ES=6Y     ESP=    SEZ=7
+  CIVICO=7     CIVICO_ES=7      ESP=    SEZ=7
+  CIVICO=8     CIVICO_ES=8Y     ESP=    SEZ=7
+  CIVICO=9     CIVICO_ES=9      ESP=    SEZ=7
+  CIVICO=10    CIVICO_ES=10     ESP=    SEZ=7
+  CIVICO=11    CIVICO_ES=11     ESP=    SEZ=7
+  CIVICO=12    CIVICO_ES=12Y    ESP=    SEZ=7
+  CIVICO=13    CIVICO_ES=13     ESP=    SEZ=7
+  CIVICO=14    CIVICO_ES=14     ESP=    SEZ=7
+  CIVICO=16    CIVICO_ES=16     ESP=    SEZ=7
+  CIVICO=18    CIVICO_ES=18     ESP=    SEZ=7
+  CIVICO=20    CIVICO_ES=20     ESP=    SEZ=7
+  CIVICO=22    CIVICO_ES=22     ESP=    SEZ=7
+  CIVICO=24    CIVICO_ES=24Y    ESP=    SEZ=7
+  CIVICO=26    CIVICO_ES=26     ESP=    SEZ=7
+  CIVICO=28    CIVICO_ES=28     ESP=    SEZ=7
+  CIVICO=30    CIVICO_ES=30     ESP=    SEZ=7
+Bash Deeper analysis of Y suffix meaning and X codes
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# VIA VITTORIO EMANUELE II (101) - long street, show civic with X prefix
+street101 = [r for r in records if r.get('COD_TOPONIMO','') == '101']
+print(f'VIA VITTORIO EMANUELE II - COD 101 ({len(street101)} civics):')
+
+# Just show the X-prefixed ones
+x_street = [r for r in street101 if r.get('CIVICO_ES','').startswith('X')]
+for r in sorted(x_street, key=lambda r: r['CIVICO_ES']):
+    print(f\"  CIVICO={r['CIVICO']:8s} CIVICO_ES={r['CIVICO_ES']:6s} ESP={r['ESP_LETT_ES']:3s} SEZ={r['SEZIONE_DI_CENSIMENTO']}\")
+
+print()
+# Are X-records consistently linked to a specific letter pattern (e.g., subaddress A, B, etc.)?
+print('ESP_LETT_ES for X records in street 101:')
+from collections import Counter
+x101_esp = Counter(r['ESP_LETT_ES'] for r in x_street)
+print(x101_esp)
+
+print()
+# Check what the Y suffix means: does CIVICO_ES ending in Y correspond to the left side (even/odd)?
+y_even = sum(1 for r in records if r.get('CIVICO_ES','').endswith('Y') and r.get('CIVICO','').isdigit() and int(r['CIVICO']) % 2 == 0)
+y_odd = sum(1 for r in records if r.get('CIVICO_ES','').endswith('Y') and r.get('CIVICO','').isdigit() and int(r['CIVICO']) % 2 != 0)
+print(f'Y suffix on even civics: {y_even}')
+print(f'Y suffix on odd civics: {y_odd}')
+
+# What about CIVICO_ES=X (suppressed/demolished)?
+x_plain = [r for r in records if r.get('CIVICO_ES','') == 'X']
+print(f'CIVICO_ES exactly X: {len(x_plain)}')
+print('Sample:')
+for r in x_plain[:8]:
+    print(f\"  CIVICO={r['CIVICO']}, TOP={r['TOPONIMO']}\")
+"
+
+OUT
+VIA VITTORIO EMANUELE II - COD 101 (320 civics):
+  CIVICO=53A      CIVICO_ES=X      ESP=    SEZ=4
+  CIVICO=50A      CIVICO_ES=X1     ESP=    SEZ=4
+  CIVICO=124A     CIVICO_ES=X2     ESP=    SEZ=9
+  CIVICO=137A     CIVICO_ES=X3     ESP=    SEZ=7
+  CIVICO=171A     CIVICO_ES=X4     ESP=    SEZ=7
+  CIVICO=203A     CIVICO_ES=X5     ESP=    SEZ=8
+  CIVICO=283A     CIVICO_ES=X6     ESP=    SEZ=10
+  CIVICO=291A     CIVICO_ES=X7     ESP=    SEZ=10
+  CIVICO=236A     CIVICO_ES=X8     ESP=    SEZ=11
+  CIVICO=252A     CIVICO_ES=X8     ESP=    SEZ=12
+
+ESP_LETT_ES for X records in street 101:
+Counter({'': 10})
+
+Y suffix on even civics: 877
+Y suffix on odd civics: 749
+CIVICO_ES exactly X: 192
+Sample:
+  CIVICO=2A, TOP=10 - VIA ONORATO CAPO
+  CIVICO=53A, TOP=101 - VIA VITTORIO EMANUELE SECONDO
+  CIVICO=1, TOP=102 - PORTICO  ZANCATI
+  CIVICO=48, TOP=103 - VICOLO ZANCATI
+  CIVICO=1A, TOP=104 - LARGO RAFFAELE ZEGRETTI
+  CIVICO=1A, TOP=106 - PIAZZA SANT'ANGELO
+  CIVICO=6A, TOP=107 - PIAZZA CESARE BATTISTI
+  CIVICO=35A, TOP=11 - VIA CASE NUOVE
+Bash Generate final summary statistics
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    records.append(data)
+
+# Summary stats
+total = len(records)
+unique_streets = len(set(r['COD_TOPONIMO'] for r in records))
+max_civico = max(int(r['CIVICO']) for r in records if r.get('CIVICO','').isdigit())
+with_letter = sum(1 for r in records if r.get('CIVICO','') and not r['CIVICO'].isdigit())
+plain_num = sum(1 for r in records if r.get('CIVICO','').isdigit())
+y_suffix = sum(1 for r in records if r.get('CIVICO_ES','').endswith('Y'))
+x_prefix = sum(1 for r in records if r.get('CIVICO_ES','').startswith('X'))
+empty_es = sum(1 for r in records if r.get('CIVICO_ES','') == '')
+with_esp_lett = sum(1 for r in records if r.get('ESP_LETT_ES','').strip())
+
+print('=== SUMMARY ===')
+print(f'Total civic points: {total}')
+print(f'Total streets/toponyms: {unique_streets}')
+print(f'Max civic number: {max_civico}')
+print(f'Plain numeric civics: {plain_num}')
+print(f'Civics with letter suffix (e.g. 12A): {with_letter}')
+print(f'CIVICO_ES with Y suffix: {y_suffix}')
+print(f'CIVICO_ES with X prefix (suppressed): {x_prefix}')
+print(f'CIVICO_ES empty: {empty_es}')
+print(f'ESP_LETT_ES non-empty: {with_esp_lett}')
+"
+
+OUT
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 20, in <module>
+    unique_streets = len(set(r['COD_TOPONIMO'] for r in records))
+                         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in <genexpr>
+    unique_streets = len(set(r['COD_TOPONIMO'] for r in records))
+                             ~^^^^^^^^^^^^^^^^
+KeyError: 'COD_TOPONIMO'
+
+Traceback (most recent call last):
+  File "<string>", line 20, in <module>
+    unique_streets = len(set(r['COD_TOPONIMO'] for r in records))
+                         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in <genexpr>
+    unique_streets = len(set(r['COD_TOPONIMO'] for r in records))
+                             ~^^^^^^^^^^^^^^^^
+KeyError: 'COD_TOPONIMO'
+Bash Final summary with fixed key access
+IN
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('/tmp/kmz_extracted/doc.kml')
+root = tree.getroot()
+
+records = []
+for pm in root.iter('{http://www.opengis.net/kml/2.2}Placemark'):
+    data = {}
+    schema = pm.find('.//{http://www.opengis.net/kml/2.2}SchemaData')
+    if schema is not None:
+        for sd in schema.findall('{http://www.opengis.net/kml/2.2}SimpleData'):
+            data[sd.get('name')] = sd.text or ''
+    coords = pm.find('.//{http://www.opengis.net/kml/2.2}coordinates')
+    if coords is not None:
+        data['coordinates'] = coords.text.strip()
+    if 'COD_TOPONIMO' in data:
+        records.append(data)
+
+total = len(records)
+unique_streets = len(set(r.get('COD_TOPONIMO','') for r in records))
+max_civico = max((int(r['CIVICO']) for r in records if r.get('CIVICO','').isdigit()), default=0)
+with_letter = sum(1 for r in records if r.get('CIVICO','') and not r['CIVICO'].isdigit())
+plain_num = sum(1 for r in records if r.get('CIVICO','').isdigit())
+y_suffix = sum(1 for r in records if r.get('CIVICO_ES','').endswith('Y'))
+x_prefix = sum(1 for r in records if r.get('CIVICO_ES','').startswith('X'))
+empty_es = sum(1 for r in records if r.get('CIVICO_ES','') == '')
+with_esp_lett = sum(1 for r in records if r.get('ESP_LETT_ES','').strip())
+
+print(f'Total civic points: {total}')
+print(f'Unique streets (COD_TOPONIMO): {unique_streets}')
+print(f'Max civic number: {max_civico}')
+print(f'Plain numeric civics: {plain_num}')
+print(f'Civics with letter sub-address (e.g. 12A): {with_letter}')
+print(f'CIVICO_ES with Y suffix: {y_suffix}')
+print(f'CIVICO_ES with X prefix (suppressed/demolished): {x_prefix}')
+print(f'CIVICO_ES empty (unassigned/unknown): {empty_es}')
+print(f'ESP_LETT_ES non-empty: {with_esp_lett}')
+"
+
+OUT
+Total civic points: 11185
+Unique streets (COD_TOPONIMO): 379
+Max civic number: 10292
+Plain numeric civics: 8095
+Civics with letter sub-address (e.g. 12A): 3090
+CIVICO_ES with Y suffix: 1971
+CIVICO_ES with X prefix (suppressed/demolished): 1348
+CIVICO_ES empty (unassigned/unknown): 4261
+ESP_LETT_ES non-empty: 533
+Here is the full analysis of the address logic in this KMZ file.
+
+Address Logic — ANAGNI_NUMERAZIONE_CIVICA
+File Structure
+The KMZ contains a single doc.kml with 11,185 civic number points (Placemarks), organized in 379 Folders, each representing one street/toponym. Icons are colored PNGs grouped by census section.
+
+Schema Fields
+Field	Type	Meaning
+COD_TOPONIMO	int	Unique numeric code for each toponym (street)
+CIVICO	string	The actual house/civic number as displayed on the building
+CIVICO_ES	string	"Esposizione" — the processed/encoded version of the civic number for the register
+ESP_LETT_ES	string	The letter sub-address component only (e.g. A, B, C…)
+TOPONIMO	string	Full street name: {COD_TOPONIMO} - {NAME}
+DATA_KML	string	Date of data capture — nearly all are 17/03/2017
+SEZIONE_DI_CENSIMENTO	int	ISTAT census section the point falls in
+COD_TOPONIMO Zones
+The code ranges reveal a spatial/administrative zonation:
+
+Range	Count	Meaning
+1–99	2,694 pts	Historic urban centre (vicoli, piazze, viali)
+100–299	628 pts	Extended urban area
+300–699	6,464 pts	Suburban / rural roads
+700–999	289 pts	Strade comunali / vicinali
+2000–2999	1,033 pts	Extra-urban roads added later
+5000–5999	77 pts	Most recent additions (post-2017 area expansions)
+CIVICO Logic
+Three types of civic numbers exist:
+
+Plain numbers (e.g. 7, 42, 301) — standard house number. 8,095 cases.
+Number + letter (e.g. 12A, 242B, 264C) — a sub-address of the same building entrance. The letter is also stored separately in ESP_LETT_ES. 3,090 cases.
+Highest number: 10292 — reflects very long suburban/rural roads.
+CIVICO_ES Encoding Logic
+CIVICO_ES is the register-facing code for the civic. It encodes status:
+
+Pattern	Meaning	Example
+{N}	Active, standard number	42
+{N}{L}	Active, with sub-address letter	242B
+{N}Y	Active number, "right-hand side" flag (Destro/Ypsilon in Italian cadastral practice) — indicates a number on a specific side of the street	1Y, 24Y
+{N}{L}Y	Active with letter + side flag	10AY, 5AY
+X	Suppressed — civic number was demolished or cancelled	192 cases
+X{n}	Suppressed with sequential counter (multiple suppressions on same street)	X1, X2… up to X72
+`` (empty)	Unassigned / not yet processed	4,261 cases
+The Y suffix is an Italian register convention: it marks a number attributed to the interior/rear side of a building or to numbers assigned on one specific side of the road in narrow urban streets.
+
+ESP_LETT_ES Logic
+Only populated when CIVICO contains a letter sub-address. Possible values: A through P (533 records total, with A being by far the most common = 204 cases). One anomalous entry has AQ (likely a data entry error).
+
+Geographic Coverage
+Bounding box: 13.068°E – 13.232°E, 41.673°N – 41.792°N
+Center: ~13.154°E, 41.739°N — confirmed Anagni city center (FR, Lazio)
+Census sections: 1–248 (urban), with gaps — totalling ~130 distinct section codes across urban and rural areas
+Summary
+This is the official civic numbering register (numerazione civica) of the municipality of Anagni (comune code A269), Frosinone province, Lazio, Italy. Each point is a geolocated door/entrance. The data follows the standard Italian ANNCSU (Archivio Nazionale dei Numeri Civici delle Strade Urbane) schema, where CIVICO_ES acts as the canonical register key with status codes (Y = active side-assigned, X/Xn = suppressed/demolished, empty = pending).

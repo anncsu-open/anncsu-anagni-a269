@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Luigi Pirelli <luipir@gmail.com>"]
+channels = ["conda-forge"]
+name = "ANNCSU_Anagni_A269"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+geopandas = ">=1.1.2,<2"
+fiona = ">=1.10.1,<2"
+pandas = ">=3.0.1,<4"
+pyarrow = ">=23.0.1,<24"
+ipython = ">=9.11.0,<10"
+ipdb = ">=0.13.13,<0.14"

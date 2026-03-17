@@ -1,0 +1,990 @@
+Let me examine the KMZ file to infer its structure and logic.
+
+Bash Check file type and size
+IN
+file "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" && ls -lh "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz"
+
+OUT
+/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz: Zip archive data, at least v2.0 to extract, compression method=deflate
+-rw-rw-r-- 1 ginetto ginetto 619K feb 23 09:57 /mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz
+Bash List contents of the KMZ zip archive
+IN
+unzip -l "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz"
+
+OUT
+Archive:  /mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+  3744193  1980-00-00 00:00   doc.kml
+---------                     -------
+  3744193                     1 file
+Bash Extract and preview first 200 lines of the KML content
+IN
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | head -200
+
+OUT
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ANAGNI_STRADARIO_COMUNALE</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="ANAGNI_STRADARIO_COMUNALE" id="FormTypeId0">
+		<SimpleField type="double" name="SUP"></SimpleField>
+		<SimpleField type="double" name="LUNG"></SimpleField>
+		<SimpleField type="string" name="DUG"></SimpleField>
+		<SimpleField type="int" name="COD_LISTA"></SimpleField>
+		<SimpleField type="string" name="TOPONIMO"></SimpleField>
+		<SimpleField type="string" name="DATA_KML"></SimpleField>
+	</Schema>
+	<StyleMap id="m_1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_102">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_102</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_102</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_103">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_103</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_103</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_104">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_104</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_104</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_105">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_105</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_105</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_106">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_106</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_106</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_107">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_107</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_107</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_108">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_108</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_108</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_109">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_109</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_109</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_110">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_110</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_110</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_111">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_111</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_111</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_112">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_112</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_112</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_113">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_113</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_113</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_114">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_114</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_114</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_115">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_115</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+Bash Find key structural elements in the KML
+IN
+# Find where styles end and placemarks begin
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -n "<Style\b\|<Placemark\|<Folder\|<LineString\|<Polygon\|<Point" | head -40
+
+OUT
+4404:	<Style id="s_ylw-pushpin4000">
+4413:	<Style id="s_ylw-pushpin430">
+4429:	<Style id="s_ylw-pushpin50">
+4438:	<Style id="s_ylw-pushpin51">
+4447:	<Style id="s_ylw-pushpin510">
+4456:	<Style id="s_ylw-pushpin52">
+4465:	<Style id="s_ylw-pushpin6">
+4474:	<Style id="s_ylw-pushpin70">
+4483:	<Style id="s_ylw-pushpin8">
+4492:	<Style id="s_ylw-pushpin_hl30">
+4501:	<Style id="s_ylw-pushpin_hl400">
+4510:	<Style id="s_ylw-pushpin_hl60">
+4519:	<Style id="s_ylw-pushpin_hl60000">
+4528:	<Style id="s_ylw-pushpin_hl601">
+4537:	<Style id="s_ylw-pushpin_hl7">
+4546:	<Style id="s_ylw-pushpin_hl70">
+4555:	<Style id="s_ylw-pushpin_hl71">
+4571:	<Style id="s_ylw-pushpin_hl8">
+4580:	<Style id="sh_1">
+4599:	<Style id="sh_10">
+4618:	<Style id="sh_100">
+4637:	<Style id="sh_101">
+4656:	<Style id="sh_102">
+4675:	<Style id="sh_103">
+4694:	<Style id="sh_104">
+4713:	<Style id="sh_105">
+4732:	<Style id="sh_106">
+4751:	<Style id="sh_107">
+4770:	<Style id="sh_108">
+4789:	<Style id="sh_109">
+4808:	<Style id="sh_11">
+4827:	<Style id="sh_110">
+4846:	<Style id="sh_111">
+4865:	<Style id="sh_112">
+4884:	<Style id="sh_113">
+4903:	<Style id="sh_114">
+4922:	<Style id="sh_115">
+4941:	<Style id="sh_116">
+4960:	<Style id="sh_117">
+4979:	<Style id="sh_118">
+Bash Find where placemarks and folders start
+IN
+# Find first Placemark
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -n "<Placemark\|<Folder\b" | head -20
+
+OUT
+20447:	<Folder>
+20449:		<Folder>
+20451:			<Placemark id="656">
+20469:			<Placemark id="657">
+20487:			<Placemark id="658">
+20506:		<Folder>
+20508:			<Placemark id="673">
+20527:		<Folder>
+20529:			<Placemark id="636">
+20548:		<Folder>
+20550:			<Placemark id="608">
+20568:			<Placemark id="609">
+20586:			<Placemark id="610">
+20604:			<Placemark id="611">
+20622:			<Placemark id="612">
+20640:			<Placemark id="613">
+20659:		<Folder>
+20661:			<Placemark id="25">
+20679:			<Placemark id="26">
+20698:		<Folder>
+Bash Read sample placemarks to understand data structure
+IN
+# Extract a sample of placemarks to understand the data structure
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | sed -n '20445,20560p'
+
+OUT
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Legend</name>
+		<Folder>
+			<name>1 - VIA RAFFAELE AMBROSETTI</name>
+			<Placemark id="656">
+				<styleUrl>#m_1</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">335.395000</SimpleData>
+						<SimpleData name="LUNG">87.860000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">1</SimpleData>
+						<SimpleData name="TOPONIMO">1 - VIA RAFFAELE AMBROSETTI</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<LineString>
+					<coordinates>
+						13.1556704041,41.743195712,0 13.1556589772,41.7431693493,0 13.1557236745,41.7431280886,0 13.1557067061,41.7431097088,0 13.1557904246,41.7430452277,0 13.1557893573,41.7430357037,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="657">
+				<styleUrl>#m_1</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">335.395000</SimpleData>
+						<SimpleData name="LUNG">87.860000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">1</SimpleData>
+						<SimpleData name="TOPONIMO">1 - VIA RAFFAELE AMBROSETTI</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<LineString>
+					<coordinates>
+						13.1556704041,41.743195712,0 13.1557458602,41.7431744206,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="658">
+				<styleUrl>#m_1</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">335.395000</SimpleData>
+						<SimpleData name="LUNG">87.860000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">1</SimpleData>
+						<SimpleData name="TOPONIMO">1 - VIA RAFFAELE AMBROSETTI</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<LineString>
+					<coordinates>
+						13.1553963079,41.743027132,0 13.1554166,41.7430451868,0 13.1554772197,41.7431288633,0 13.1554878536,41.7431438334,0 13.1555035851,41.7431346791,0 13.1555723289,41.7431630221,0 13.1556107267,41.7432112386,0 13.1556704041,41.743195712,0 13.1556836453,41.7432210519,0 13.1557163587,41.7432901479,0 13.1557577346,41.7433894121,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>10 - VIA ONORATO CAPO</name>
+			<Placemark id="673">
+				<styleUrl>#m_2</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">1893.719000</SimpleData>
+						<SimpleData name="LUNG">196.430000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">10</SimpleData>
+						<SimpleData name="TOPONIMO">10 - VIA ONORATO CAPO</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<LineString>
+					<coordinates>
+						13.1644790806,41.7417218704,0 13.1643306223,41.7417294631,0 13.1642151492,41.741747716,0 13.164168396,41.7417576467,0 13.1641560615,41.7417600895,0 13.1641436184,41.7417622013,-0.056 13.1641310828,41.7417639793,-0.112 13.1641184704,41.7417654212,-0.167 13.1641057973,41.7417665254,-0.223 13.1640930798,41.7417672903,-0.278 13.1640803339,41.741767715,-0.334 13.1640675759,41.7417677989,-0.389 13.164054822,41.7417675419,-0.445 13.1640420884,41.7417669444,-0.5 13.1640293915,41.7417660071,-0.556 13.1640167472,41.7417647312,-0.612 13.1640041718,41.7417631184,-0.667 13.1639916811,41.7417611707,-0.723 13.1639792912,41.7417588905,-0.778 13.1639670177,41.7417562808,-0.8340000000000001 13.1639548764,41.7417533448,-0.8889999999999999 13.1639428826,41.7417500864,-0.945 13.1637482859,41.7416851719,0 13.1636966178,41.7416659775,0 13.1635588532,41.7416163225,0 13.1632675022,41.7415265221,0 13.163144859,41.741487104,0 13.162973287,41.7414268671,0 13.1629241409,41.7414698702,0 13.1628672008,41.7415283025,0 13.1628660156,41.7415298177,0 13.1628652581,41.7415314797,-0.25 13.1628649589,41.7415332214,-0.5 13.1628651301,41.7415349728,-0.75 13.1628654776,41.7415373765,0 13.1628654013,41.7415397935,-0.167 13.1628649027,41.7415421822,-0.334 13.1628639902,41.7415445013,-0.5 13.1628626797,41.7415467108,-0.667 13.1628609938,41.7415487725,-0.8340000000000001 13.1628155479,41.7415940485,0 13.1627633793,41.7416407432,0 13.1627660026,41.7416428871,0 13.1627007491,41.7417000267,0 13.1626647036,41.7417252549,0 13.1625829355,41.7417927402,0 13.162507647,41.741864123,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>100 - VIA ENRICO VIGNA</name>
+			<Placemark id="636">
+				<styleUrl>#m_3</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">152.153000</SimpleData>
+						<SimpleData name="LUNG">38.877000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">100</SimpleData>
+						<SimpleData name="TOPONIMO">100 - VIA ENRICO VIGNA</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<LineString>
+					<coordinates>
+						13.1562646759,41.7425177252,0 13.1563079016,41.742622461,0 13.1563234105,41.742665097,0 13.15631961,41.742665674,0 13.156354029,41.7427459109,0 13.156363433,41.7427740693,0 13.1564021969,41.7428486006,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>101 - VIA VITTORIO EMANUELE SECONDO</name>
+			<Placemark id="608">
+				<styleUrl>#m_4</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#FormTypeId0">
+						<SimpleData name="SUP">4949.019000</SimpleData>
+						<SimpleData name="LUNG">1014.387000</SimpleData>
+						<SimpleData name="DUG">VIA</SimpleData>
+						<SimpleData name="COD_LISTA">101</SimpleData>
+						<SimpleData name="TOPONIMO">101 - VIA VITTORIO EMANUELE SECONDO</SimpleData>
+						<SimpleData name="DATA_KML">17/03/2017</SimpleData>
+					</SchemaData>
+Bash Count total placemarks
+IN
+# Count total placemarks, folders, and unique DUG values
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -c "<Placemark"
+
+OUT
+707
+Bash Find all unique DUG (street designation type) values and their counts
+IN
+# Count unique folders (streets) and find all unique DUG values
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<SimpleData name="DUG">)[^<]+' | sort | uniq -c | sort -rn
+
+OUT
+    476 VIA
+     61 VICOLO
+     61 PIAZZA
+     17 STRADA VICINALE
+     12 TRAVERSA PRIVATA
+      9 STRADA PROVINCIALE
+      9 LARGO
+      7 VIALE
+      7 TRAVERSA
+      7 STRADA COMUNALE
+      7 PORTICO
+      4 VIA VECCHIA
+      4 CIRCONVALLAZIONE
+      2 VICOLONE
+      2 STRADONE
+      1 VIALONE
+      1 STRADA REGIONALE
+      1 BORGO
+Bash Count unique street codes
+IN
+# Count unique COD_LISTA values (street codes) and max/min
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<SimpleData name="COD_LISTA">)[^<]+' | sort -n | uniq | wc -l
+
+OUT
+430
+Bash Show first and last COD_LISTA values
+IN
+# Get the range of COD_LISTA
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<SimpleData name="COD_LISTA">)[^<]+' | sort -n | uniq | head -5
+echo "..."
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<SimpleData name="COD_LISTA">)[^<]+' | sort -n | uniq | tail -5
+
+OUT
+1
+2
+3
+4
+5
+...
+5501
+5504
+5505
+5506
+5508
+Bash Check folder count and folder names
+IN
+# Check the folder count and if COD_LISTA correlates 1:1 with folders
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -c "<Folder>"
+# Also check the nested structure of folders
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<name>)[^<]+' | head -20
+
+OUT
+432
+ANAGNI_STRADARIO_COMUNALE
+Legend
+1 - VIA RAFFAELE AMBROSETTI
+10 - VIA ONORATO CAPO
+100 - VIA ENRICO VIGNA
+101 - VIA VITTORIO EMANUELE SECONDO
+102 - PORTICO  ZANCATI
+103 - VICOLO ZANCATI
+104 - LARGO RAFFAELE ZEGRETTI
+105 - PIAZZA SANT&apos;ANDREA
+106 - PIAZZA SANT&apos;ANGELO
+107 - PIAZZA CESARE BATTISTI
+108 - PIAZZA RUGGERO BONGHI
+109 - PIAZZA PAPA BONIFACIO OTTAVO
+11 - VIA CASE NUOVE
+112 - PIAZZA CAMILLO BENSO DI CAVOUR
+113 - PIAZZA SANTA CHIARA
+114 - PIAZZA DANTE ALIGHIERI
+115 - PIAZZA MASSIMO D&apos;AZEGLIO
+116 - PIAZZA PAPA INNOCENZO TERZO
+Bash Check if SUP/LUNG are per-street attributes (same for all segments in a folder)
+IN
+# Check SUP and LUNG - check if they are consistent within a folder (same street)
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | grep -oP '(?<=<SimpleData name="SUP">)[^<]+|(?<=<SimpleData name="LUNG">)[^<]+|(?<=<SimpleData name="COD_LISTA">)[^<]+' | paste - - - | sort -k3 -n | awk '!seen[$3]++' | head -20
+
+OUT
+awk: cmd. line:1: \!seen[$3]++
+awk: cmd. line:1: ^ backslash not last character on line
+Bash Python analysis of street segments and attributes
+IN
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | \
+python3 -c "
+import sys, re
+content = sys.stdin.read()
+# Find all placemarks and extract fields
+placemarks = re.findall(r'<Placemark[^>]*>(.*?)</Placemark>', content, re.DOTALL)
+streets = {}
+for p in placemarks:
+    sup = re.search(r'<SimpleData name=\"SUP\">(.*?)</SimpleData>', p)
+    lung = re.search(r'<SimpleData name=\"LUNG\">(.*?)</SimpleData>', p)
+    dug = re.search(r'<SimpleData name=\"DUG\">(.*?)</SimpleData>', p)
+    cod = re.search(r'<SimpleData name=\"COD_LISTA\">(.*?)</SimpleData>', p)
+    top = re.search(r'<SimpleData name=\"TOPONIMO\">(.*?)</SimpleData>', p)
+    geom_type = 'LineString' if '<LineString>' in p else ('Polygon' if '<Polygon>' in p else 'Point')
+    if cod:
+        k = cod.group(1)
+        if k not in streets:
+            streets[k] = {'dug': dug.group(1) if dug else '', 'lung': lung.group(1) if lung else '', 'sup': sup.group(1) if sup else '', 'top': top.group(1) if top else '', 'segments': 0, 'geom': set()}
+        streets[k]['segments'] += 1
+        streets[k]['geom'].add(geom_type)
+
+# Show summary
+seg_counts = [v['segments'] for v in streets.values()]
+print(f'Total streets (COD_LISTA): {len(streets)}')
+print(f'Streets with 1 segment: {sum(1 for c in seg_counts if c==1)}')
+print(f'Streets with 2 segments: {sum(1 for c in seg_counts if c==2)}')
+print(f'Streets with >2 segments: {sum(1 for c in seg_counts if c>2)}')
+print(f'Max segments for one street: {max(seg_counts)}')
+print()
+print('Sample streets (first 5):')
+for k, v in list(sorted(streets.items(), key=lambda x: int(x[0])))[:5]:
+    print(f'  COD={k} | DUG={v[\"dug\"]} | LUNG={v[\"lung\"]}m | SUP={v[\"sup\"]}sqm | SEGMENTS={v[\"segments\"]} | GEOM={v[\"geom\"]} | TOPONIMO={v[\"top\"]}')
+"
+
+OUT
+Total streets (COD_LISTA): 430
+Streets with 1 segment: 279
+Streets with 2 segments: 91
+Streets with >2 segments: 60
+Max segments for one street: 8
+
+Sample streets (first 5):
+  COD=1 | DUG=VIA | LUNG=87.860000m | SUP=335.395000sqm | SEGMENTS=3 | GEOM={'LineString'} | TOPONIMO=1 - VIA RAFFAELE AMBROSETTI
+  COD=2 | DUG=VIA | LUNG=57.165000m | SUP=188.814000sqm | SEGMENTS=2 | GEOM={'LineString'} | TOPONIMO=2 - VIA CAMILLO ANZELLOTTI
+  COD=3 | DUG=VIA | LUNG=68.534000m | SUP=200.117000sqm | SEGMENTS=2 | GEOM={'LineString'} | TOPONIMO=3 - VIA ATTILIO ARCI
+  COD=4 | DUG=VIA | LUNG=130.451000m | SUP=1529.058000sqm | SEGMENTS=1 | GEOM={'LineString'} | TOPONIMO=4 - VIA DEGLI ARCI
+  COD=5 | DUG=VIA | LUNG=228.935000m | SUP=1044.278000sqm | SEGMENTS=2 | GEOM={'LineString'} | TOPONIMO=5 - VIA BAGNO
+Bash Find bounding box of all coordinates
+IN
+# Check bounding box of all coordinates to confirm geographic area
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | \
+python3 -c "
+import sys, re
+content = sys.stdin.read()
+coords = re.findall(r'([\d.]+),([\d.]+),', content)
+lons = [float(c[0]) for c in coords]
+lats = [float(c[1]) for c in coords]
+print(f'Coordinate count: {len(coords)}')
+print(f'Longitude range: {min(lons):.6f} to {max(lons):.6f}')
+print(f'Latitude range:  {min(lats):.6f} to {max(lats):.6f}')
+print(f'Center approx:   lon={sum(lons)/len(lons):.6f}, lat={sum(lats)/len(lats):.6f}')
+"
+
+OUT
+Coordinate count: 50792
+Longitude range: 13.063310 to 13.245250
+Latitude range:  41.670812 to 41.792176
+Center approx:   lon=13.154933, lat=41.738493
+Bash Analyze style usage across placemarks
+IN
+# Check styles - how many unique styles exist and what they represent
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | \
+python3 -c "
+import sys, re
+content = sys.stdin.read()
+# Check unique styleUrls used in placemarks
+styles_used = re.findall(r'<styleUrl>#(.*?)</styleUrl>', content)
+unique_styles = set(styles_used)
+print(f'Total styleUrl references: {len(styles_used)}')
+print(f'Unique style IDs used: {len(unique_styles)}')
+print(f'Sample style IDs: {sorted(unique_styles)[:10]}')
+
+# Check if style IDs match COD_LISTA pattern (m_N)
+m_styles = [s for s in unique_styles if re.match(r'm_\d+', s)]
+print(f'  m_N type styles: {len(m_styles)} (range: {min(int(s[2:]) for s in m_styles)} to {max(int(s[2:]) for s in m_styles)})')
+other_styles = [s for s in unique_styles if not re.match(r'm_\d+', s)]
+print(f'  Other styles: {other_styles}')
+"
+
+OUT
+Total styleUrl references: 1585
+Unique style IDs used: 1317
+Sample style IDs: ['m_1', 'm_10', 'm_100', 'm_101', 'm_102', 'm_103', 'm_104', 'm_105', 'm_106', 'm_107']
+  m_N type styles: 428 (range: 1 to 430)
+  Other styles: ['sh_168', 'sh_262', 'sh_419', 'sh_319', 'sh_333', 'sh_367', 'sn_160', 'sn_16', 'sn_125', 'sn_137', 'sh_289', 'sn_72', 'sn_177', 'sn_420', 'sh_428', 'sn_412', 'sn_88', 'sn_48', 'sn_364', 'sn_205', 'sn_243', 'sn_418', 'sh_188', 'sn_26', 'sn_315', 'sn_130', 'sn_410', 'sn_55', 'sh_303', 'sn_67', 'sn_429', 'sn_287', 'sh_155', 'sh_9', 'sn_152', 'sh_135', 'sn_164', 'sh_281', 'sn_331', 'sn_147', 'sn_332', 'sh_187', 's_ylw-pushpin_hl60', 'sh_346', 'sn_ylw-pushpin100', 'sh_211', 'sh_107', 'sh_27', 'sn_424', 'm_ylw-pushpin310', 'sh_343', 'sn_408', 'sh_286', 'sn_68', 'sn_286', 'sh_311', 'sh_73', 'sn_117', 'sh_279', 'sh_46', 'sh_259', 'sn_165', 'sn_356', 'sh_430', 'sn_422', 'sn_191', 'sn_196', 'm_ylw-pushpin80', 'sh_355', 'sn_157', 'sh_143', 'sh_131', 'sn_345', 'sh_255', 'sn_428', 'sh_156', 's_ylw-pushpin_hl7', 'm_ylw-pushpin311', 'sn_296', 'sn_415', 'sh_427', 'sh_202', 'sh_71', 'sh_263', 'sh_345', 'sn_320', 'sh_369', 's_ylw-pushpin_hl8', 'sn_365', 'sh_298', 'sn_20', 'sh_160', 'sn_199', 'sh_234', 'sh_317', 'sn_395', 'sh_269', 'sn_232', 'sn_342', 'sh_418', 's_ylw-pushpin70', 'sh_198', 'sh_227', 'sn_12', 'sh_277', 'sh_203', 'sn_327', 'sh_197', 'sh_183', 'sn_162', 'sh_150', 'sh_205', 'sh_292', 'sn_81', 'sn_257', 'sn_112', 'sn_51', 'sn_176', 'sh_314', 'sh_139', 'sn_33', 'sh_24', 'sn_417', 'sh_38', 'sh_79', 'sn_270', 'sh_297', 'sn_113', 'sh_200', 'sn_111', 'sn_211', 'sn_280', 'sn_104', 'sh_119', 'sn_387', 'sn_75', 'sn_208', 'sh_264', 'sh_74', 'sn_91', 'sn_261', 'sn_172', 'sh_340', 'sn_197', 'sh_371', 'sn_255', 'sh_37', 'sn_283', 'sn_401', 'sn_212', 'sh_101', 'sn_375', 'sh_63', 'sn_238', 'sn_2', 'sh_405', 'sh_178', 'sn_189', 'sh_4', 'sh_327', 'sn_308', 'sn_361', 'sn_275', 'sn_181', 'sn_346', 'sh_129', 'sh_133', 'sn_4', 'sn_71', 'sn_225', 'sh_108', 'sh_261', 'sn_359', 'sn_339', 'sn_106', 'sh_394', 'sh_98', 'sn_310', 'sh_95', 'sh_296', 'sn_200', 'sn_248', 'sn_330', 'sn_246', 'sn_360', 'sh_199', 'sn_38', 'sh_235', 'sh_411', 'sh_361', 'sn_101', 'sn_163', 'sh_339', 'sn_138', 'sh_123', 'sn_52', 'sn_263', 'sh_396', 'sh_240', 'sn_70', 'sn_168', 'sn_150', 'sh_144', 'sn_37', 'sn_259', 'sh_172', 'sn_58', 'sh_180', 'sh_159', 'sh_15', 'sh_109', 'sn_241', 'sn_337', 'sh_100', 'sn_180', 'sn_43', 'sh_357', 'sn_188', 'sh_19', 'sn_340', 'sn_32', 'sh_28', 'sn_267', 'sn_40', 'sn_250', 'sh_231', 'sh_3', 'sh_141', 'sh_393', 'sh_380', 'sn_407', 'sh_96', 'sh_145', 'sh_347', 'sh_217', 'sn_31', 'sn_314', 'sn_353', 'sh_112', 'sn_183', 'sn_42', 'sh_121', 'sn_122', 'sn_35', 'sh_181', 'sh_105', 'sn_114', 'sn_292', 'sh_320', 's_ylw-pushpin_hl71', 's_ylw-pushpin6', 'sh_312', 'sn_231', 'sh_91', 'm_ylw-pushpin70', 'sn_322', 'sh_142', 'sh_350', 'sh_6', 'sh_321', 'sh_14', 'sn_423', 'sn_233', 'sh_52', 'sn_ylw-pushpin20', 'sn_22', 'sh_92', 'sh_302', 'sh_308', 'sh_326', 'sn_156', 'sh_10', 'sn_60', 'sn_209', 'sh_115', 'sn_108', 'sh_257', 'sn_269', 'sn_59', 'sh_372', 'sn_419', 'sh_316', 'sn_45', 'sn_92', 'sn_425', 'sn_414', 'sh_125', 'sh_359', 'sh_173', 'sh_275', 'sn_47', 'sh_33', 'sh_65', 'sh_273', 'sh_363', 'sh_50', 'sn_341', 'sn_57', 'sh_258', 'sn_69', 'sn_90', 'sn_304', 'sn_358', 'sn_319', 'sn_254', 'sn_282', 'sh_238', 'sn_10', 'sh_195', 's_ylw-pushpin430', 'sh_215', 'sn_62', 'sh_78', 'sn_350', 'sn_235', 'sh_236', 'sn_247', 'sn_266', 'sn_398', 's_ylw-pushpin510', 'sh_230', 'sh_387', 'sh_134', 'sn_28', 'sh_72', 's_ylw-pushpin_hl60000', 'sh_329', 'sh_20', 'sh_252', 'sh_392', 'sh_77', 'sh_295', 'sn_343', 'sn_265', 'sh_36', 'sh_102', 'sn_30', 'sh_335', 'sn_276', 'sn_19', 'sh_43', 'sn_23', 'sn_224', 'sh_103', 'sn_61', 'sn_115', 'sh_23', 'sh_332', 'sn_245', 'sn_262', 'sh_114', 'sh_7', 'sn_94', 'sh_81', 'sn_121', 'sh_284', 'sn_318', 'sn_388', 'sn_149', 'sh_318', 'sh_83', 'sn_369', 'sh_364', 'sn_27', 'sh_374', 'sn_84', 'sh_243', 'sn_1', 'sn_82', 'sn_277', 'sn_194', 'sh_204', 'sh_307', 'sh_249', 'sh_152', 'sn_335', 'sh_89', 'sh_171', 'sh_111', 'sh_68', 'sh_366', 'sn_305', 'sh_417', 'sn_391', 'sh_378', 'sn_229', 'sn_227', 'sn_220', 'sn_39', 'sn_285', 'sn_174', 'sh_120', 'sh_97', 'sh_55', 'sh_398', 'sn_198', 'sh_287', 'sn_383', 'sn_293', 'sh_294', 'm_ylw-pushpin9', 'sn_3', 'sh_18', 'sh_373', 'm_ylw-pushpin51', 'sn_95', 'sn_74', 'sh_224', 'sn_97', 'sn_158', 'sn_290', 'sn_242', 'sn_87', 'sh_104', 'sh_381', 'sh_404', 'sn_64', 'sn_65', 'sn_187', 'sh_216', 'sh_42', 'sh_300', 'sn_166', 'sn_21', 'sh_137', 'sn_333', 'sn_234', 'sn_102', 'sn_195', 'sh_407', 'sn_110', 'sn_421', 'sh_362', 'sh_117', 'sh_288', 'sh_251', 'sn_159', 'sh_338', 'sn_15', 'sn_244', 'sh_268', 'sh_221', 'sn_274', 'sn_85', 'sh_136', 'sn_54', 'sh_401', 'sn_155', 'sh_213', 'msn_ylw-pushpin200', 'sh_348', 'sh_283', 'sh_196', 'sh_158', 'sh_113', 'sn_190', 'sh_324', 'sh_360', 'm_ylw-pushpin400', 'sh_356', 'sn_271', 'sn_14', 'sn_382', 'sh_232', 'sn_215', 'sn_207', 'sh_400', 'sn_173', 'sh_8', 'sh_153', 'sn_7', 'sn_230', 'sn_394', 'sh_17', 'sn_312', 'sn_171', 'sh_382', 'sh_386', 'sn_307', 'sn_288', 'sn_128', 'sn_5', 'sn_260', 'sh_189', 'sn_214', 'sh_218', 'sh_84', 'sn_96', 'sh_420', 'sh_45', 'sh_376', 'sn_300', 's_ylw-pushpin50', 'sn_403', 'sh_229', 'sn_329', 'sn_119', 'sh_225', 'sh_54', 'sh_53', 'sn_217', 'sh_267', 'sh_334', 'sn_175', 'sh_190', 'sn_36', 'sn_273', 'sh_90', 'sh_416', 'sh_242', 'sn_89', 'sn_167', 'sn_392', 'sh_149', 'sh_11', 'sh_325', 'sn_93', 's_ylw-pushpin_hl70', 'sh_412', 'sh_58', 'sn_316', 'sh_67', 'sh_233', 'sh_239', 'sh_399', 'sn_284', 'sn_352', 'sh_185', 'sh_237', 'sh_30', 'sn_326', 'sn_279', 'sh_375', 'sh_310', 'sn_302', 'sn_409', 'sh_165', 'sh_212', 'sh_176', 'sh_322', 'sn_402', 'sn_213', 'sh_124', 'sh_391', 'sh_429', 'sh_35', 'sn_328', 'sh_5', 'sn_289', 'sn_78', 'sh_75', 'sh_337', 'sn_297', 'sh_293', 'sh_207', 'sn_131', 'sh_422', 'sn_116', 'sh_290', 'sh_106', 'sn_169', 'sn_63', 'sh_80', 'sn_386', 'sn_416', 'sn_223', 'sn_381', 'sn_374', 'sh_306', 'sh_250', 'sh_94', 'sn_8', 'sh_186', 'sn_240', 'sn_141', 'sn_366', 's_ylw-pushpin_hl400', 'sn_306', 'sn_206', 'sn_6', 'sh_59', 'sn_426', 'sn_25', 'sh_21', 'sn_325', 'sn_11', 'sn_385', 's_ylw-pushpin8', 'sn_73', 'sn_399', 'sn_53', 'sn_66', 'sn_129', 'sh_395', 'sh_280', 'sh_220', 'sh_365', 'sn_253', 'sh_126', 'sn_397', 'sn_79', 'sh_388', 'sn_221', 'sn_393', 'sn_143', 'sh_51', 'sn_146', 'sh_166', 'sn_98', 'sh_60', 'sn_77', 's_ylw-pushpin4000', 'sh_177', 'sn_323', 'sn_136', 'sn_351', 'sh_383', 'sh_201', 'sn_120', 'sn_34', 'sh_162', 'sh_260', 'sh_226', 'sh_140', 'sn_29', 'sh_88', 'sh_61', 'sh_270', 'sh_246', 'sh_344', 's_ylw-pushpin_hl601', 'sh_406', 'sh_56', 'sh_244', 'msn_ylw-pushpin3', 'sh_170', 'sn_237', 'sh_256', 'sh_64', 'sn_86', 'sh_41', 'sn_49', 'sn_272', 'sn_186', 'sn_13', 'sn_103', 'sn_134', 'sn_249', 'sh_ylw-pushpin30', 'sn_118', 'sn_251', 'sn_210', 'sh_40', 'sh_70', 'sh_368', 'sn_268', 'm_ylw-pushpin6000', 'sn_142', 'sh_285', 'sh_62', 'sh_85', 'sh_66', 'sh_425', 'sn_124', 'sn_204', 'sn_24', 'sn_372', 'sh_157', 'sh_34', 'sh_291', 'sh_163', 'sh_351', 'sn_107', 'sh_93', 'sh_245', 'sn_427', 'sh_276', 'sh_426', 'sh_57', 'sn_357', 'sh_331', 'sn_362', 'sn_76', 'sn_182', 'sh_31', 'sn_380', 'sh_182', 'sh_384', 'sh_44', 'sn_389', 'sh_377', 'sh_26', 'sh_76', 'sn_105', 'sn_56', 'sn_311', 'sh_358', 'sh_390', 'sn_222', 'sh_16', 'sh_69', 'sn_354', 'sn_202', 'sh_12', 'sn_349', 'sh_99', 'sn_336', 'sn_430', 'sn_376', 'sn_404', 'sn_390', 'sn_50', 'sh_409', 'sn_299', 'sh_266', 'sn_368', 'sh_274', 'sn_140', 'sh_210', 'sh_330', 'sn_413', 'sh_179', 'sh_184', 'sh_169', 'sh_424', 'sn_216', 'sn_301', 'sn_334', 'sh_354', 'sh_ylw-pushpin2000', 'sh_323', 'sh_301', 'sh_379', 'sh_167', 'sh_86', 'sn_126', 'sh_174', 'sn_203', 'sn_317', 'sh_413', 'sh_313', 'sh_385', 'sh_342', 'sn_281', 'sh_49', 'sn_133', 'sh_352', 'sh_48', 'sh_39', 'sn_145', 'sh_146', 'sh_130', 'sn_18', 'sh_403', 'sn_278', 'sn_291', 'sn_219', 'sh_122', 'sh_423', 'sh_208', 'sn_127', 'sn_17', 'sh_228', 'sh_13', 'sh_421', 'sn_161', 'sn_99', 'sh_353', 'sh_47', 'sh_87', 'sn_100', 'sn_367', 'sh_25', 's_ylw-pushpin_hl30', 'sh_2', 'sh_116', 'sh_29', 'sh_414', 'sh_206', 'sn_379', 'sh_315', 'sh_147', 'sn_193', 'sh_282', 'sh_397', 'sh_278', 'sn_303', 'sn_201', 'sh_222', 'sn_80', 'sh_32', 'sh_415', 'sh_154', 'sh_265', 'sh_175', 'sn_154', 'sn_178', 'sh_370', 'sh_254', 'sh_299', 'sn_295', 'sh_191', 'sh_127', 'sn_226', 'sn_355', 'sh_82', 'sn_377', 'sh_194', 'sh_328', 'sh_389', 's_ylw-pushpin52', 'sh_151', 'sh_247', 'sn_400', 'sn_384', 'sh_110', 'sh_271', 'sn_44', 'sn_264', 'sn_192', 'sh_161', 'sn_370', 'sn_83', 'sn_123', 'sh_148', 'sh_128', 'sn_185', 'sn_46', 'sn_184', 'sn_239', 'sh_272', 'sh_209', 'sh_192', 'sn_378', 'sn_338', 'sn_135', 'sh_253', 'sh_223', 'sn_396', 'sn_252', 'sn_179', 'sn_258', 'sh_336', 'sn_41', 'sh_241', 'sn_405', 'sh_341', 'sn_373', 'sh_305', 'sn_144', 'sh_219', 'sh_118', 's_ylw-pushpin51', 'sn_371', 'sn_294', 'sh_1', 'sh_138', 'sn_139', 'sh_408', 'sn_148', 'sh_164', 'sn_344', 'sn_298', 'sh_248', 'sh_349', 'sh_22', 'sn_9', 'sn_406', 'sn_151', 'sn_324', 'sh_402', 'sn_170', 'sn_218', 'sn_347', 'sn_228', 'sn_109', 'sh_193', 'sn_348', 'sn_363', 'sn_313', 'sn_236', 'sn_256', 'm_ylw-pushpin50', 'sn_411', 'sh_410', 'sn_321', 'sn_153', 'sh_304', 'sh_214']
+Bash Show sample style definitions to understand color coding
+IN
+# Check what a style definition looks like for a line
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | \
+python3 -c "
+import sys, re
+content = sys.stdin.read()
+# Find the sn_1 and sh_1 styles
+for sid in ['sn_1', 'sh_1', 'sn_100', 'sh_100']:
+    m = re.search(r'<Style id=\"' + sid + r'\">(.*?)</Style>', content, re.DOTALL)
+    if m:
+        print(f'--- Style {sid} ---')
+        print(m.group(0)[:500])
+        print()
+"
+
+OUT
+--- Style sn_1 ---
+<Style id="sn_1">
+		<LabelStyle id="ls_1">
+			<color>ff000000</color>
+		</LabelStyle>
+		<BalloonStyle id="bs_1">
+			<text><![CDATA[<style>
+.label { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000;}
+.field { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#FFF0F0; border: 1px solid #000000;}
+.odd { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#F0F0F0; border: 1px solid #000000;}
+
+--- Style sh_1 ---
+<Style id="sh_1">
+		<LabelStyle id="ls_1">
+			<color>ff000000</color>
+		</LabelStyle>
+		<BalloonStyle id="bs_1">
+			<text><![CDATA[<style>
+.label { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000;}
+.field { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#FFF0F0; border: 1px solid #000000;}
+.odd { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#F0F0F0; border: 1px solid #000000;}
+
+--- Style sn_100 ---
+<Style id="sn_100">
+		<LabelStyle id="ls_100">
+			<color>ff000000</color>
+		</LabelStyle>
+		<BalloonStyle id="bs_100">
+			<text><![CDATA[<style>
+.label { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000;}
+.field { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#FFF0F0; border: 1px solid #000000;}
+.odd { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#F0F0F0; border: 1px solid #00
+
+--- Style sh_100 ---
+<Style id="sh_100">
+		<LabelStyle id="ls_100">
+			<color>ff000000</color>
+		</LabelStyle>
+		<BalloonStyle id="bs_100">
+			<text><![CDATA[<style>
+.label { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000;}
+.field { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#FFF0F0; border: 1px solid #000000;}
+.odd { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; background-color:#F0F0F0; border: 1px solid #00
+Bash Find all unique line colors used for streets
+IN
+# Get the LineStyle color from the styles to understand color scheme
+unzip -p "/mnt/data/PROGRAMMING/AUTONOMO/GeoBeyond/Civici/anncsu-manager-repos/ANNCSU_Anagni_A269/ANAGNI_STRADARIO_COMUNALE.kmz" doc.kml | \
+python3 -c "
+import sys, re
+content = sys.stdin.read()
+# Find LineStyle colors within sn_ styles
+styles = re.findall(r'<Style id=\"(sn_\d+)\">(.*?)</Style>', content, re.DOTALL)
+colors = {}
+for sid, body in styles:
+    m = re.search(r'<LineStyle[^>]*>.*?<color>(.*?)</color>', body, re.DOTALL)
+    if m:
+        colors[sid] = m.group(1)
+unique_colors = set(colors.values())
+print(f'Unique LineStyle colors: {len(unique_colors)}')
+for c in sorted(unique_colors):
+    count = sum(1 for v in colors.values() if v == c)
+    print(f'  {c}: used by {count} styles')
+"
+
+OUT
+Unique LineStyle colors: 247
+  ff00004c: used by 2 styles
+  ff00007f: used by 2 styles
+  ff000099: used by 2 styles
+  ff0000cc: used by 2 styles
+  ff0000ff: used by 3 styles
+  ff00134c: used by 2 styles
+  ff001f7f: used by 2 styles
+  ff00264c: used by 2 styles
+  ff002699: used by 2 styles
+  ff0033cc: used by 2 styles
+  ff00394c: used by 2 styles
+  ff003f7f: used by 2 styles
+  ff003fff: used by 2 styles
+  ff004c00: used by 2 styles
+  ff004c13: used by 2 styles
+  ff004c26: used by 2 styles
+  ff004c39: used by 2 styles
+  ff004c4c: used by 2 styles
+  ff004c99: used by 2 styles
+  ff005f7f: used by 2 styles
+  ff0066cc: used by 2 styles
+  ff007299: used by 2 styles
+  ff007f00: used by 2 styles
+  ff007f1f: used by 2 styles
+  ff007f3f: used by 2 styles
+  ff007f5f: used by 2 styles
+  ff007f7f: used by 2 styles
+  ff007fff: used by 2 styles
+  ff009900: used by 2 styles
+  ff009926: used by 2 styles
+  ff00994c: used by 2 styles
+  ff009972: used by 2 styles
+  ff009999: used by 2 styles
+  ff0099cc: used by 2 styles
+  ff00bfff: used by 2 styles
+  ff00cc00: used by 2 styles
+  ff00cc33: used by 2 styles
+  ff00cc66: used by 2 styles
+  ff00cc99: used by 2 styles
+  ff00cccc: used by 2 styles
+  ff00ff00: used by 4 styles
+  ff00ff3f: used by 2 styles
+  ff00ff7f: used by 2 styles
+  ff00ffbf: used by 2 styles
+  ff00ffff: used by 4 styles
+  ff13004c: used by 1 styles
+  ff134c00: used by 2 styles
+  ff1f007f: used by 1 styles
+  ff1f7f00: used by 2 styles
+  ff26004c: used by 1 styles
+  ff260099: used by 1 styles
+  ff26264c: used by 2 styles
+  ff262f4c: used by 2 styles
+  ff26394c: used by 2 styles
+  ff26424c: used by 2 styles
+  ff264c00: used by 2 styles
+  ff264c26: used by 2 styles
+  ff264c2f: used by 2 styles
+  ff264c39: used by 2 styles
+  ff264c42: used by 2 styles
+  ff264c4c: used by 2 styles
+  ff269900: used by 2 styles
+  ff2f264c: used by 1 styles
+  ff2f4c26: used by 2 styles
+  ff3300cc: used by 1 styles
+  ff333333: used by 1 styles
+  ff33cc00: used by 2 styles
+  ff39004c: used by 1 styles
+  ff39264c: used by 1 styles
+  ff394c00: used by 2 styles
+  ff394c26: used by 2 styles
+  ff3f007f: used by 1 styles
+  ff3f00ff: used by 1 styles
+  ff3f3f7f: used by 2 styles
+  ff3f4f7f: used by 2 styles
+  ff3f5f7f: used by 2 styles
+  ff3f6f7f: used by 2 styles
+  ff3f7f00: used by 2 styles
+  ff3f7f3f: used by 2 styles
+  ff3f7f4f: used by 2 styles
+  ff3f7f5f: used by 2 styles
+  ff3f7f6f: used by 2 styles
+  ff3f7f7f: used by 1 styles
+  ff3fff00: used by 2 styles
+  ff42264c: used by 1 styles
+  ff424c26: used by 2 styles
+  ff4c0000: used by 2 styles
+  ff4c0013: used by 1 styles
+  ff4c0026: used by 1 styles
+  ff4c0039: used by 1 styles
+  ff4c004c: used by 1 styles
+  ff4c0099: used by 1 styles
+  ff4c1300: used by 2 styles
+  ff4c2600: used by 2 styles
+  ff4c2626: used by 1 styles
+  ff4c262f: used by 1 styles
+  ff4c2639: used by 1 styles
+  ff4c2642: used by 1 styles
+  ff4c264c: used by 1 styles
+  ff4c2f26: used by 2 styles
+  ff4c3900: used by 2 styles
+  ff4c3926: used by 2 styles
+  ff4c4226: used by 2 styles
+  ff4c4c00: used by 2 styles
+  ff4c4c26: used by 2 styles
+  ff4c4c99: used by 2 styles
+  ff4c5f99: used by 2 styles
+  ff4c7299: used by 2 styles
+  ff4c8599: used by 2 styles
+  ff4c9900: used by 2 styles
+  ff4c994c: used by 2 styles
+  ff4c995f: used by 2 styles
+  ff4c9972: used by 2 styles
+  ff4c9985: used by 2 styles
+  ff4c9999: used by 2 styles
+  ff4f3f7f: used by 1 styles
+  ff4f7f3f: used by 2 styles
+  ff5b5b5b: used by 1 styles
+  ff5f007f: used by 1 styles
+  ff5f3f7f: used by 1 styles
+  ff5f4c99: used by 1 styles
+  ff5f7f00: used by 2 styles
+  ff5f7f3f: used by 2 styles
+  ff5f994c: used by 2 styles
+  ff6600cc: used by 1 styles
+  ff6666cc: used by 2 styles
+  ff667fcc: used by 2 styles
+  ff6699cc: used by 2 styles
+  ff66b2cc: used by 2 styles
+  ff66cc00: used by 2 styles
+  ff66cc66: used by 2 styles
+  ff66cc7f: used by 2 styles
+  ff66cc99: used by 2 styles
+  ff66ccb2: used by 2 styles
+  ff66cccc: used by 2 styles
+  ff6f3f7f: used by 1 styles
+  ff6f7f3f: used by 2 styles
+  ff720099: used by 1 styles
+  ff724c99: used by 1 styles
+  ff729900: used by 2 styles
+  ff72994c: used by 2 styles
+  ff7f0000: used by 2 styles
+  ff7f001f: used by 1 styles
+  ff7f003f: used by 1 styles
+  ff7f005f: used by 1 styles
+  ff7f007f: used by 1 styles
+  ff7f00ff: used by 1 styles
+  ff7f1f00: used by 2 styles
+  ff7f3f00: used by 2 styles
+  ff7f3f3f: used by 2 styles
+  ff7f3f4f: used by 1 styles
+  ff7f3f5f: used by 1 styles
+  ff7f3f6f: used by 1 styles
+  ff7f3f7f: used by 1 styles
+  ff7f4f3f: used by 2 styles
+  ff7f5f00: used by 2 styles
+  ff7f5f3f: used by 2 styles
+  ff7f66cc: used by 1 styles
+  ff7f6f3f: used by 2 styles
+  ff7f7f00: used by 2 styles
+  ff7f7f3f: used by 2 styles
+  ff7f7fff: used by 2 styles
+  ff7f9fff: used by 2 styles
+  ff7fbfff: used by 2 styles
+  ff7fcc66: used by 2 styles
+  ff7fdfff: used by 2 styles
+  ff7fff00: used by 2 styles
+  ff7fff7f: used by 2 styles
+  ff7fff9f: used by 2 styles
+  ff7fffbf: used by 2 styles
+  ff7fffdf: used by 2 styles
+  ff7fffff: used by 2 styles
+  ff808080: used by 2 styles
+  ff81ff7f: used by 2 styles
+  ff848484: used by 1 styles
+  ff854c99: used by 1 styles
+  ff85994c: used by 2 styles
+  ff990000: used by 2 styles
+  ff990026: used by 1 styles
+  ff99004c: used by 1 styles
+  ff990072: used by 1 styles
+  ff990099: used by 1 styles
+  ff9900cc: used by 1 styles
+  ff992600: used by 2 styles
+  ff994c00: used by 2 styles
+  ff994c4c: used by 2 styles
+  ff994c5f: used by 1 styles
+  ff994c72: used by 1 styles
+  ff994c85: used by 1 styles
+  ff994c99: used by 1 styles
+  ff995f4c: used by 2 styles
+  ff9966cc: used by 1 styles
+  ff997200: used by 2 styles
+  ff99724c: used by 2 styles
+  ff99854c: used by 2 styles
+  ff999900: used by 1 styles
+  ff99994c: used by 2 styles
+  ff99cc00: used by 2 styles
+  ff99cc66: used by 2 styles
+  ff9f7fff: used by 1 styles
+  ffadadad: used by 1 styles
+  ffb266cc: used by 1 styles
+  ffb2cc66: used by 2 styles
+  ffbf00ff: used by 1 styles
+  ffbf7fff: used by 1 styles
+  ffbfff00: used by 2 styles
+  ffbfff7f: used by 2 styles
+  ffc0c0c0: used by 2 styles
+  ffcc0000: used by 2 styles
+  ffcc0033: used by 1 styles
+  ffcc0066: used by 1 styles
+  ffcc0099: used by 1 styles
+  ffcc00cc: used by 1 styles
+  ffcc3300: used by 2 styles
+  ffcc6600: used by 2 styles
+  ffcc6666: used by 2 styles
+  ffcc667f: used by 1 styles
+  ffcc6699: used by 1 styles
+  ffcc66b2: used by 1 styles
+  ffcc66cc: used by 1 styles
+  ffcc7f66: used by 2 styles
+  ffcc9900: used by 2 styles
+  ffcc9966: used by 2 styles
+  ffccb266: used by 2 styles
+  ffcccc00: used by 2 styles
+  ffcccc66: used by 2 styles
+  ffd6d6d6: used by 1 styles
+  ffdf7fff: used by 1 styles
+  ffdfff7f: used by 2 styles
+  ffff0000: used by 4 styles
+  ffff003f: used by 1 styles
+  ffff007f: used by 1 styles
+  ffff00bf: used by 1 styles
+  ffff00ff: used by 3 styles
+  ffff3f00: used by 2 styles
+  ffff7f00: used by 2 styles
+  ffff7f7f: used by 2 styles
+  ffff7f9f: used by 1 styles
+  ffff7fbf: used by 1 styles
+  ffff7fdf: used by 1 styles
+  ffff7fff: used by 1 styles
+  ffff9f7f: used by 2 styles
+  ffffbf00: used by 2 styles
+  ffffbf7f: used by 2 styles
+  ffffdf7f: used by 2 styles
+  ffffff00: used by 4 styles
+  ffffff7f: used by 2 styles
+Here is the inferred logic and structure of the KMZ file:
+
+ANAGNI_STRADARIO_COMUNALE.kmz — Structure Analysis
+What it is
+A Municipal Street Register (Stradario Comunale) for the city of Anagni (Lazio, Italy), produced with Google Earth Pro and dated 17/03/2017. It represents the official geo-coded street network of the municipality.
+
+Archive Structure
+
+ANAGNI_STRADARIO_COMUNALE.kmz (ZIP, 619 KB)
+└── doc.kml (3.7 MB uncompressed)
+    ├── Schema (field definitions)
+    ├── StyleMaps + Styles (one per street, ~430 sets)
+    └── Document > Folder "Legend"
+        └── [one sub-Folder per street, 430 total]
+            └── [1–8 Placemarks = LineString segments]
+Data Schema
+Each <Placemark> carries these attributes in <ExtendedData>:
+
+Field	Type	Meaning
+COD_LISTA	int	Unique street code (1–5508, non-contiguous)
+DUG	string	Street type designation (Denominazione Urbanistica Generica)
+TOPONIMO	string	Full street name, formatted as "COD - DUG NAME"
+LUNG	double	Total length of the street in meters
+SUP	double	Total surface area of the street in m²
+DATA_KML	string	Data date (17/03/2017 for all features)
+Key Logic
+One folder per street: Each <Folder> groups all segments of a single street under COD_LISTA. SUP and LUNG are street-level attributes — they repeat identically across all segments of the same street.
+
+Multi-segment streets: 60 streets have >2 line segments (max: 8), reflecting that a street may be split into disconnected or non-contiguous <LineString> geometries.
+
+Style-per-street color coding: Each street COD_LISTA maps 1:1 to a style triplet m_N / sn_N / sh_N (normal/highlight), giving each street a unique color among 247 distinct colors.
+
+Statistics
+Metric	Value
+Total streets (COD_LISTA)	430
+Total geometry segments (Placemarks)	707
+Total coordinate vertices	50,792
+Geographic extent (lon)	13.063° – 13.245° E
+Geographic extent (lat)	41.671° – 41.792° N
+DUG Street-Type Distribution
+Type	Count
+VIA	476
+VICOLO	61
+PIAZZA	61
+STRADA VICINALE	17
+TRAVERSA PRIVATA	12
+STRADA PROVINCIALE	9
+LARGO	9
+VIALE, TRAVERSA, STRADA COMUNALE, PORTICO	7 each
+Others (VIA VECCHIA, CIRCONVALLAZIONE, BORGO, …)	≤4
