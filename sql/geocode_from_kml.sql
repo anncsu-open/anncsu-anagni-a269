@@ -4,7 +4,7 @@
 -- the kml file is located at ...
 CREATE OR REPLACE TABLE geocoding_results_kml AS (
     SELECT
-        A."PROGRESSIVO_NAZIONALE",
+        A."PROGRESSIVO_ACCESSO",
         A."ODONIMO",
         A."CIVICO",
         A."ESPONENTE",
@@ -21,12 +21,9 @@ CREATE OR REPLACE TABLE geocoding_results_kml AS (
         A."CIVICO" || COALESCE(A."ESPONENTE", '') = AC."Civico"
 )
 
-CREATE OR REPLACE TABLE not_kml_geocoded_addresses AS (
+CREATE OR REPLACE TABLE not_kml_geocoded_anncsu AS (
     SELECT
-        A."PROGRESSIVO_NAZIONALE",
-        A."ODONIMO",
-        A."CIVICO",
-        A."ESPONENTE"
+        A.*
     FROM
         anncsu A
     ANTI JOIN
