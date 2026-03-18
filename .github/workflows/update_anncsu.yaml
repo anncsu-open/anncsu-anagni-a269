@@ -1,0 +1,116 @@
+name: Update anncsu remote DB
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*.duckdb'
+
+jobs:
+  update-anncsu:
+    runs-on: ubuntu-latest
+
+    env:
+      API_URL: ${{ secrets.ANNSCU_API_URL }}
+      API_TOKEN: ${{ secrets.ANNSCU_API_TOKEN }}
+    steps:
+      - name: Checkout current commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find latest duckdb file
+        id: find_duckdb
+        run: |
+          DUCKDB=$(ls -1t ./*.duckdb 2>/dev/null | head -n1 || true)
+          echo "duckdb=$DUCKDB" >> "$GITHUB_OUTPUT"
+
+      - name: "Install SQLite3 (if missing)"
+        run: |
+          if command -v sqlite3 >/dev/null 2>&1; then
+            echo "sqlite3 already installed: $(sqlite3 --version)"
+          else
+            sudo apt-get update
+            sudo apt-get install -y sqlite3
+          fi
+      - name: Extract current and previous geopackages from duckdb
+        id: extract_gpkg
+        if: steps.find_duckdb.outputs.duckdb != ''
+        uses: geobeyond/extract-duckdb-table-action@v0.0.0beta
+        with:
+          duckdb_file: ${{ steps.find_duckdb.outputs.duckdb }}
+          table_name: geocoded_anncsu
+          output_format: "GPKG"
+
+      - name: basename extracted files
+        id: basename_files
+        if: steps.extract_gpkg.outputs.current_file != ''
+        working-directory: ${{ github.workspace }}
+        run: |
+          current_file=$(basename "${{ steps.extract_gpkg.outputs.current_file }}")
+          previous_file=$(basename "${{ steps.extract_gpkg.outputs.previous_file }}")
+          echo "Current file: $current_file"
+          echo "Previous file: $previous_file"
+          echo "current=$current_file" >> "$GITHUB_OUTPUT"
+          echo "previous=$previous_file" >> "$GITHUB_OUTPUT"
+          echo "Renamed files successfully."
+
+      - name: If first commit create fake previous file
+        id: create_fake_previous_if_first
+        run: |
+          # generate a fake previous file with no records if this is the first commit
+          if [ "${{ steps.basename_files.outputs.previous }}" == "first_commit" ]; then
+            # set fake previous filename
+            fake_previous="fake_previous_anncsu.gpkg"
+
+            cp "${{ steps.basename_files.outputs.current }}" ${fake_previous}
+            echo "Created fake previous file: ${fake_previous}"
+
+            # empty records in geocoded_anncsu table in fake_previous_anncsu.gpkg
+            sqlite3 ${fake_previous} "DELETE FROM geocoded_anncsu;"
+            echo "Emptied records in fake previous file: ${fake_previous}"
+
+            # Update the previous file output to point to the fake file
+            echo "previous=${fake_previous}" >> "$GITHUB_OUTPUT"
+            echo "current=${{ steps.basename_files.outputs.current }}" >> "$GITHUB_OUTPUT"
+          else
+            # propagate previous and current as is
+            echo "previous=${{ steps.basename_files.outputs.previous }}" >> "$GITHUB_OUTPUT"
+            echo "current=${{ steps.basename_files.outputs.current }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run geodiff between previous and current
+        id: geodiffaction
+        uses: geobeyond/geodiff-action@v0.0.0beta
+        with:
+          # expected inputs: left/right gpkg and output file
+          base_file: ${{ steps.create_fake_previous_if_first.outputs.previous }}
+          compare_file: ${{ steps.create_fake_previous_if_first.outputs.current }}
+          output_format: "json"
+
+      # - name: Enable Debug Logging
+      #   run: |
+      #       echo "DEBUGGING_ENABLED=true" >> $GITHUB_ENV
+      #       echo "ACTIONS_RUNNER_DEBUG=true" >> $GITHUB_ENV
+      #       echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
+
+      - name: Dump geodiff results to file
+        id: dump_geodiff_results
+        run: |
+          # NOTE: the diff_result output is a JSON string, so we need to write it
+          #       to a file as is without any additional formatting
+          #       need to use <<EOF to preserve double quotes in the JSON string
+          cat > geodiff_result.json <<EOF
+            ${{ steps.geodiffaction.outputs.diff_result }}
+          EOF
+
+      - name: Update ANNCSU with geodiff results
+        id: anncsu_update_from_geodiff
+        if:
+        #   env.API_URL != '' &&
+        #   env.API_TOKEN != '' &&
+          steps.geodiffaction.outputs.has_changes == 'true'
+        uses: geobeyond/anncsu-update-action@v0.0.0beta
+        with:
+          geodiff_report: geodiff_result.json
+
