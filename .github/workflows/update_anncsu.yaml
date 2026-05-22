@@ -96,13 +96,15 @@ jobs:
 
       - name: Dump geodiff results to file
         id: dump_geodiff_results
+        env:
+          DIFF_RESULT: ${{ steps.geodiffaction.outputs.diff_result }}
         run: |
           # NOTE: the diff_result output is a JSON string, so we need to write it
           #       to a file as is without any additional formatting
-          #       need to use <<EOF to preserve double quotes in the JSON string
-          cat > geodiff_result.json <<EOF
-            ${{ steps.geodiffaction.outputs.diff_result }}
-          EOF
+          #       this is the reason to use printf instead of echo to avoid adding
+          #       extra quotes or escaping
+          echo "Writing geodiff results to geodiff_result.json"
+          printf '%s' "$DIFF_RESULT" > geodiff_result.json
 
       - name: Update ANNCSU with geodiff results
         id: anncsu_update_from_geodiff
