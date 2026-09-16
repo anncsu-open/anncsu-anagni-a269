@@ -14,9 +14,6 @@ jobs:
       API_URL: ${{ secrets.ANNSCU_API_URL }}
       API_TOKEN: ${{ secrets.ANNSCU_API_TOKEN }}
     steps:
-      - name: Debug
-        uses: raven-actions/debug@v1
-
       - name: Checkout current commit
         uses: actions/checkout@v4
         with:
@@ -108,6 +105,10 @@ jobs:
           #       extra quotes or escaping
           echo "Writing geodiff results to geodiff_result.json"
           printf '%s' "$DIFF_RESULT" > geodiff_result.json
+
+      - name: Debug contexts
+        if: ${{ env.DEBUG == 'true' }}
+        uses: raven-actions/debug@v1
 
       - name: Update ANNCSU with geodiff results
         id: anncsu_update_from_geodiff
