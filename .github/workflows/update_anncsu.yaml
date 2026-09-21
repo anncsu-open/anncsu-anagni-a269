@@ -14,13 +14,18 @@ jobs:
       API_URL: ${{ secrets.ANNSCU_API_URL }}
       API_TOKEN: ${{ secrets.ANNSCU_API_TOKEN }}
     steps:
-      - name: Install GIT
+      - name: Install GIT and SQLite3 (if missing)
         run: |
           if git --version >/dev/null 2>&1; then
             echo "git already installed: $(git --version)"
           else
             apt-get update
             apt-get install -y git
+          fi
+          if command -v sqlite3 >/dev/null 2>&1; then
+            echo "sqlite3 already installed: $(sqlite3 --version)"
+          else
+            apt-get install -y sqlite3
           fi
       - name: Checkout current commit
         uses: actions/checkout@v4
@@ -34,14 +39,6 @@ jobs:
           echo "Latest duckdb file by git log: $DUCKDB"
           echo "duckdb=$DUCKDB" >> "$GITHUB_OUTPUT"
 
-      - name: "Install SQLite3 (if missing)"
-        run: |
-          if command -v sqlite3 >/dev/null 2>&1; then
-            echo "sqlite3 already installed: $(sqlite3 --version)"
-          else
-            sudo apt-get update
-            sudo apt-get install -y sqlite3
-          fi
       - name: Extract current and previous geopackages from duckdb
         id: extract_gpkg
         if: steps.find_duckdb.outputs.duckdb != ''
