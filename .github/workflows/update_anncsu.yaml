@@ -14,6 +14,14 @@ jobs:
       API_URL: ${{ secrets.ANNSCU_API_URL }}
       API_TOKEN: ${{ secrets.ANNSCU_API_TOKEN }}
     steps:
+      - name: Install GIT
+        run: |
+          if git --version >/dev/null 2>&1; then
+            echo "git already installed: $(git --version)"
+          else
+            apt-get update
+            apt-get install -y git
+          fi
       - name: Checkout current commit
         uses: actions/checkout@v4
         with:
@@ -22,7 +30,8 @@ jobs:
       - name: Find latest duckdb file
         id: find_duckdb
         run: |
-          DUCKDB=$(ls -1t ./*.duckdb 2>/dev/null | head -n1 || true)
+          DUCKDB=$(while read FILE; do git log --pretty="%ad $FILE" --date=iso8601-strict -1 -- "$FILE"; done < <( git ls-files | grep duckdb) | sort -r | head -n1 | cut -d " " -f 2 || true)
+          echo "Latest duckdb file by git log: $DUCKDB"
           echo "duckdb=$DUCKDB" >> "$GITHUB_OUTPUT"
 
       - name: "Install SQLite3 (if missing)"
@@ -105,10 +114,6 @@ jobs:
           #       extra quotes or escaping
           echo "Writing geodiff results to geodiff_result.json"
           printf '%s' "$DIFF_RESULT" > geodiff_result.json
-
-      - name: Debug contexts
-        if: ${{ env.DEBUG == 'true' }}
-        uses: raven-actions/debug@v1
 
       - name: Update ANNCSU with geodiff results
         id: anncsu_update_from_geodiff
