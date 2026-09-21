@@ -16,10 +16,10 @@ jobs:
     steps:
       - name: Install GIT and SQLite3 (if missing)
         run: |
+          apt-get update
           if git --version >/dev/null 2>&1; then
             echo "git already installed: $(git --version)"
           else
-            apt-get update
             apt-get install -y git
           fi
           if command -v sqlite3 >/dev/null 2>&1; then
