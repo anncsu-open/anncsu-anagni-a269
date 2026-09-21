@@ -121,6 +121,10 @@ jobs:
         uses: geobeyond/anncsu-update-action@v0.0.0beta
         env:
           ANNCSU_UPDATE_CODICE_COMUNE: ${{ vars.ANNCSU_UPDATE_CODICE_COMUNE }}
+          PDND_KID: ${{ vars.PDND_KID }}
+          PDND_ISSUER: ${{ vars.PDND_ISSUER }}
+          PDND_SUBJECT: ${{ vars.PDND_SUBJECT }}
+          PDND_AUDIENCE: ${{ vars.PDND_AUDIENCE }}
         with:
           geodiff_report: geodiff_result.json
 
