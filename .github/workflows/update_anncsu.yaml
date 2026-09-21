@@ -125,6 +125,7 @@ jobs:
           PDND_ISSUER: ${{ vars.PDND_ISSUER }}
           PDND_SUBJECT: ${{ vars.PDND_SUBJECT }}
           PDND_AUDIENCE: ${{ vars.PDND_AUDIENCE }}
+          PDND_PRIVATE_KEY: ${{ secrets.PDND_PRIVATE_KEY }}
         with:
           geodiff_report: geodiff_result.json
 
