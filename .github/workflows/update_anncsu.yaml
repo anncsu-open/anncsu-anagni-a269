@@ -130,6 +130,7 @@ jobs:
           PDND_PURPOSE_ID_INTERNI: ${{ vars.PDND_PURPOSE_ID_INTERNI }}
           PDND_PURPOSE_ID_ODONIMI: ${{ vars.PDND_PURPOSE_ID_ODONIMI }}
           PDND_PURPOSE_ID_PA: ${{ vars.PDND_PURPOSE_ID_PA }}
+          PDND_PURPOSE_ID_COORDINATE_BULK: ${{ vars.PDND_PURPOSE_ID_COORDINATE_BULK }}
           # secrets
           PDND_MODI_KID: ${{ secrets.PDND_MODI_KID }}
           PDND_MODI_LOA: ${{ secrets.PDND_MODI_LOA }}
