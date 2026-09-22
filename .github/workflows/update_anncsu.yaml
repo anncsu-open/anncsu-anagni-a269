@@ -125,7 +125,19 @@ jobs:
           PDND_ISSUER: ${{ vars.PDND_ISSUER }}
           PDND_SUBJECT: ${{ vars.PDND_SUBJECT }}
           PDND_AUDIENCE: ${{ vars.PDND_AUDIENCE }}
+          PDND_PURPOSE_ID_ACCESSI: ${{ vars.PDND_PURPOSE_ID_ACCESSI }}
+          PDND_PURPOSE_ID_COORDINATE: ${{ vars.PDND_PURPOSE_ID_COORDINATE }}
+          PDND_PURPOSE_ID_INTERNI: ${{ vars.PDND_PURPOSE_ID_INTERNI }}
+          PDND_PURPOSE_ID_ODONIMI: ${{ vars.PDND_PURPOSE_ID_ODONIMI }}
+          PDND_PURPOSE_ID_PA: ${{ vars.PDND_PURPOSE_ID_PA }}
+          # secrets
+          PDND_MODI_KID: ${{ secrets.PDND_MODI_KID }}
+          PDND_MODI_LOA: ${{ secrets.PDND_MODI_LOA }}
+          PDND_MODI_PRIVATE_KEY: ${{ secrets.PDND_MODI_PRIVATE_KEY }}
+          PDND_MODI_USER_ID: ${{ secrets.PDND_MODI_USER_ID }}
+          PDND_MODI_USER_LOCATION: ${{ secrets.PDND_MODI_USER_LOCATION }}
           PDND_PRIVATE_KEY: ${{ secrets.PDND_PRIVATE_KEY }}
+
         with:
           geodiff_report: geodiff_result.json
 
