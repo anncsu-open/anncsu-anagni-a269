@@ -61,6 +61,20 @@ jobs:
           echo "previous=$previous_file" >> "$GITHUB_OUTPUT"
           echo "Renamed files successfully."
 
+      - name: Dump schema of current file to json
+        id: dump_current_schema
+        if: steps.basename_files.outputs.current != ''
+        run: |
+          # generate a json array with column name and 0-based column position
+          # of geocoded_anncsu table in the current gpkg file
+          schema_file="geocoded_anncsu_schema.json"
+          sqlite3 "${{ steps.basename_files.outputs.current }}" \
+            "SELECT json_group_array(json_object('name', name, 'column', cid)) FROM (SELECT name, cid FROM pragma_table_info('geocoded_anncsu') ORDER BY cid);" \
+            > ${schema_file}
+          echo "Schema of ${{ steps.basename_files.outputs.current }} saved in ${schema_file}:"
+          cat ${schema_file}
+          echo "schema_file=$(basename "$schema_path")" >> "$GITHUB_OUTPUT"
+
       - name: If first commit create fake previous file
         id: create_fake_previous_if_first
         run: |
@@ -84,7 +98,6 @@ jobs:
             echo "previous=${{ steps.basename_files.outputs.previous }}" >> "$GITHUB_OUTPUT"
             echo "current=${{ steps.basename_files.outputs.current }}" >> "$GITHUB_OUTPUT"
           fi
-
       - name: Run geodiff between previous and current
         id: geodiffaction
         uses: geobeyond/geodiff-action@v0.0.0beta
@@ -111,14 +124,14 @@ jobs:
           #       extra quotes or escaping
           echo "Writing geodiff results to geodiff_result.json"
           printf '%s' "$DIFF_RESULT" > geodiff_result.json
-
+          echo "geodiff_result=$(basename "geodiff_result.json")" >> "$GITHUB_OUTPUT"
       - name: Update ANNCSU with geodiff results
         id: anncsu_update_from_geodiff
         if:
         #   env.API_URL != '' &&
         #   env.API_TOKEN != '' &&
           steps.geodiffaction.outputs.has_changes == 'true'
-        uses: geobeyond/anncsu-update-action@v0.0.0beta
+        uses: geobeyond/anncsu-update-action@v0.0.2
         env:
           ANNCSU_UPDATE_CODICE_COMUNE: ${{ vars.ANNCSU_UPDATE_CODICE_COMUNE }}
           PDND_KID: ${{ vars.PDND_KID }}
@@ -141,4 +154,5 @@ jobs:
 
         with:
           geodiff_report: geodiff_result.json
+          geodiff_schema: geocoded_anncsu_schema.json
 
